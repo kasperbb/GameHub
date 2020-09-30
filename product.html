@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub</title>
+    <link rel="stylesheet" href="styles/product.css">
+    <link rel="stylesheet" href="styles/utilities.css">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/2540fdf7f0.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <header class="flex align-center justify-between bg-white">
+        <div class="logo pl-5">
+            <a href="index.html">
+                <img src="https://raw.githubusercontent.com/NoroffFEU/first-year-cross-course-assignment-brief-three/master/GameHub_Logo.png"
+                    width="100" alt="Logo">
+            </a>
+        </div>
+
+        <div class="search">
+            <form>
+                <input type="text" name="search" id="search">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+
+        <div class="actions">
+            <a href="#">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+            <a href="#">
+                <i class="fas fa-heart"></i>
+            </a>
+        </div>
+
+        <div class="sign-up">
+            <a href="sign-in.html">
+                <i class="fas fa-sign-in-alt"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="product">
+            <h1 class="product__title">Call of Duty: Black Ops Cold War (PS4)</h1>
+            <div class="product__container">
+                <div class="product__image">
+                    <img src="images/game-covers/product_image.jpg" alt="Product Image">
+                </div>
+                <div class="product__info">
+                    <h2>$60</h2>
+                    <button class="bg-blue">Add to cart</button>
+                    <button class="bg-red">Buy now</button>
+                    <h3 class="from-seller">From seller: GameHub</h3>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                    gubergren, no sea takimata sanctus est Lorem ipsum dolor sit...</p>
+                    <a href="#description">Read more</a>
+                </div>
+            </div>
+            <div class="product__images">
+                <img src="images/game-covers/destiny_2.jpg" alt="Destiny 2">
+                <img src="images/game-covers/destiny_2.jpg" alt="Destiny 2">
+                <img src="images/game-covers/destiny_2.jpg" alt="Destiny 2">
+            </div>
+        </div>
+
+        <!--
+            Trending
+        -->
+        <div class="similar-products">
+
+            <div class="grid-header">
+                <h2 class="trending__title">Similar Products</h2>
+                <a class="small-button" href="#0">Discover all</a>
+            </div>
+
+            <div class="grid-body">
+
+                <div class="product-card">
+                    <img src="images/game-covers/destiny_2.jpg" alt="Destiny 2">
+                    <div class="product-card__title">
+                        <a href="product.html">Destiny 2</a>
+                        <p>PS4</p>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__price">
+                            $60
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="favorite-button">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="shopping-cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/game-covers/cyberpunk_2077.jpg" alt="Cyberpunk 2077">
+                    <div class="product-card__title">
+                        <a href="product.html">Cyberpunk 2077</a>
+                        <p>PS4</p>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__price">
+                            $60
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="favorite-button">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="shopping-cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/game-covers/call_of_duty_infinite_warfare.jpg"
+                        alt="Call of Duty: Infinite Warfare">
+                    <div class="product-card__title">
+                        <a href="product.html">Call of Duty: Infinite Warfare</a>
+                        <p>PS4</p>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__price">
+                            $60
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="favorite-button">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="shopping-cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/game-covers/assassins_creed_odyssey.png" alt="Assassin's Creed Odyssey">
+                    <div class="product-card__title">
+                        <a href="product.html">Assassin's Creed Odyssey</a>
+                        <p>PS4</p>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__price">
+                            $60
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="favorite-button">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="shopping-cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/game-covers/fifa_21_standard_edition.jpg" alt="FIFA 21 Standard Edition">
+                    <div class="product-card__title">
+                        <a href="product.html">FIFA 21 Standard Edition</a>
+                        <p>PS4</p>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__price">
+                            $60
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="favorite-button">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="shopping-cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/game-covers/call_of_duty_infinite_warfare.jpg" alt="Call of Duty: Infinite Warfare">
+                    <div class="product-card__title">
+                        <a href="product.html">Call of Duty: Infinite Warfare</a>
+                        <p>PS4</p>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__price">
+                            $60
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="favorite-button">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="shopping-cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!--
+            / Trending
+        -->
+        
+        <div class="product-information">
+            <div class="product-information__card mr-2">
+                <div class="tabs__nav">
+                    <h4 class="tabs__nav-item active">Description</h4>
+                    <h4 class="tabs__nav-item">System Requirements</h4>
+                </div>
+                <div class="product-information__tabs-content">
+                    <p class="product-information__description tabs__panel active" id="description">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                        gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+                        elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+                        eos et
+                        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                        gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+                        elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+                        eos et
+                        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo.
+                    </p>
+                    <ul class="product-information__system-requirements tabs__panel">
+                        <li><strong>OS:</strong> Windows 7 64-Bit / Windows 8 64-Bit / Windows 8.1 64-Bit</li>
+                        <li><strong>Processor:</strong> Intel® Core™ i3-530 @ 2.93 GHz / AMD Phenom™ II X4 810 @ 2.60 GHz</li>
+                        <li><strong>DirectX:</strong> Version 11</li>
+                        <li><strong>Network:</strong> Broadband Internet connection</li>
+                        <li><strong>Sound Card:</strong> DirectX Compatible</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-information__card">
+                <h4 class="product__reviews-header">Product Reviews</h4>
+                <div class="product__reviews">
+                    <div class="product__review">
+                        <h5 class="product__review-title">Love this game!!</h5>
+                        <div class="product__review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="product__review-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor invidunt ut labore et dolore
+                            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                            gubergren, no sea takimata sanctus est.</p>
+                    </div>
+                    <div class="product__review">
+                        <h5 class="product__review-title">Love this game!!</h5>
+                        <div class="product__review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="product__review-body">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor invidunt ut labore et dolore
+                            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                            gubergren, no sea takimata sanctus est.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        Copyright &copy;
+    </footer>
+
+</body>
+
+</html>
