@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub</title>
+    <link rel="stylesheet" href="styles/product-list.css">
+    <link rel="stylesheet" href="styles/utilities.css">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/2540fdf7f0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="flex align-center justify-between bg-white">
+        <div class="logo pl-5">
+            <a href="index.html">
+                <img src="https://raw.githubusercontent.com/NoroffFEU/first-year-cross-course-assignment-brief-three/master/GameHub_Logo.png"
+                    width="100" alt="Logo">
+            </a>
+        </div>
+
+        <div class="search">
+            <form>
+                <input type="text" name="search" id="search">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+
+        <div class="actions">
+            <a href="#">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+            <a href="#">
+                <i class="fas fa-heart"></i>
+            </a>
+        </div>
+
+        <div class="sign-up">
+            <a href="sign-in.html">
+                <i class="fas fa-sign-in-alt"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="top-bar">
+            <div class="top-bar__title">
+                <h1>Trending games</h1>
+            </div>
+            <div class="top-bar__actions">
+                <div class="top-bar__view">
+                    <i class="fas fa-th active"></i>
+                    <i class="fas fa-th-list"></i>
+                </div>
+                <div class="top-bar__sort">
+                    <label for="sort">Sort by</label>
+                    <select name="sort" id="sort">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="side-bar">
+                <div class="categories">
+                    <h3>Categories</h3>
+                    <form>
+                        <div class="category">
+                            <input type="checkbox" id="pc-games" name="pc-games" value="PC Games">
+                            <label for="pc-games"> PC Games</label>
+                        </div>
+                        <div class="category">
+                            <input type="checkbox" id="playstation-games" name="playstation-games" value="Playstation Games">
+                            <label for="playstation-games"> Playstation Games</label>
+                        </div>
+                        <div class="category">
+                            <input type="checkbox" id="xbox-games" name="xbox-games" value="Xbox Games">
+                            <label for="xbox-games"> Xbox Games</label>
+                        </div>
+                        <div class="category">
+                            <input type="checkbox" id="new-games" name="new-games" value="New Games">
+                            <label for="new-games"> New Games</label>
+                        </div>
+                        <div class="category">
+                            <input type="checkbox" id="used-games" name="used-games" value="Used Games">
+                            <label for="used-games"> Used Games</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="price-range">
+                    <h3>Price Range</h3>
+                    <form>
+                        <input type="range" id="price-range" name="price-range" min="0" max="1500">
+                    </form>
+                </div>
+            </div>
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <img src="images/game-covers/destiny_2.jpg" alt="Destiny 2">
+                    <div class="product-card__title">
+                        <a href="product.html">Destiny 2</a>
+                        <p>PS4</p>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__price">
+                            $60
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="favorite-button">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="shopping-cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="images/game-covers/cyberpunk_2077.jpg" alt="Cyberpunk 2077">
+                    <div class="product-card__title">
+                        <a href="product.html">Cyberpunk 2077</a>
+                        <p>PS4</p>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__price">
+                            $60
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="favorite-button">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="shopping-cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="images/game-covers/call_of_duty_infinite_warfare.jpg" alt="Call of Duty: Infinite Warfare">
+                    <div class="product-card__title">
+                        <a href="product.html">Call of Duty: Infinite Warfare</a>
+                        <p>PS4</p>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__price">
+                            $60
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="favorite-button">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="shopping-cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="images/game-covers/assassins_creed_odyssey.png" alt="Assassin's Creed Odyssey">
+                    <div class="product-card__title">
+                        <a href="product.html">Assassin's Creed Odyssey</a>
+                        <p>PS4</p>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__price">
+                            $60
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="favorite-button">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="shopping-cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="images/game-covers/fifa_21_standard_edition.jpg" alt="FIFA 21 Standard Edition">
+                    <div class="product-card__title">
+                        <a href="product.html">FIFA 21 Standard Edition</a>
+                        <p>PS4</p>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__price">
+                            $60
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="favorite-button">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="shopping-cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/game-covers/destiny_2.jpg" alt="Destiny 2">
+                    <div class="product-card__title">
+                        <a href="product.html">Destiny 2</a>
+                        <p>PS4</p>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__price">
+                            $60
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="favorite-button">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="shopping-cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="images/game-covers/cyberpunk_2077.jpg" alt="Cyberpunk 2077">
+                    <div class="product-card__title">
+                        <a href="product.html">Cyberpunk 2077</a>
+                        <p>PS4</p>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__price">
+                            $60
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="favorite-button">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="shopping-cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="images/game-covers/call_of_duty_infinite_warfare.jpg" alt="Call of Duty: Infinite Warfare">
+                    <div class="product-card__title">
+                        <a href="product.html">Call of Duty: Infinite Warfare</a>
+                        <p>PS4</p>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__price">
+                            $60
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="favorite-button">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="shopping-cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="images/game-covers/assassins_creed_odyssey.png" alt="Assassin's Creed Odyssey">
+                    <div class="product-card__title">
+                        <a href="product.html">Assassin's Creed Odyssey</a>
+                        <p>PS4</p>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__price">
+                            $60
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="favorite-button">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="shopping-cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="images/game-covers/fifa_21_standard_edition.jpg" alt="FIFA 21 Standard Edition">
+                    <div class="product-card__title">
+                        <a href="product.html">FIFA 21 Standard Edition</a>
+                        <p>PS4</p>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__price">
+                            $60
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="favorite-button">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="shopping-cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/game-covers/destiny_2.jpg" alt="Destiny 2">
+                    <div class="product-card__title">
+                        <a href="product.html">Destiny 2</a>
+                        <p>PS4</p>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__price">
+                            $60
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="favorite-button">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="shopping-cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="images/game-covers/cyberpunk_2077.jpg" alt="Cyberpunk 2077">
+                    <div class="product-card__title">
+                        <a href="product.html">Cyberpunk 2077</a>
+                        <p>PS4</p>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__price">
+                            $60
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="favorite-button">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="shopping-cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="images/game-covers/call_of_duty_infinite_warfare.jpg" alt="Call of Duty: Infinite Warfare">
+                    <div class="product-card__title">
+                        <a href="product.html">Call of Duty: Infinite Warfare</a>
+                        <p>PS4</p>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__price">
+                            $60
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="favorite-button">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="shopping-cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="images/game-covers/assassins_creed_odyssey.png" alt="Assassin's Creed Odyssey">
+                    <div class="product-card__title">
+                        <a href="product.html">Assassin's Creed Odyssey</a>
+                        <p>PS4</p>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__price">
+                            $60
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="favorite-button">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="shopping-cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="images/game-covers/fifa_21_standard_edition.jpg" alt="FIFA 21 Standard Edition">
+                    <div class="product-card__title">
+                        <a href="product.html">FIFA 21 Standard Edition</a>
+                        <p>PS4</p>
+                    </div>
+                    <div class="product-card__content">
+                        <div class="product-card__price">
+                            $60
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="favorite-button">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <button class="shopping-cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        Copyright &copy;
+    </footer>
+
+</body>
+
+</html>

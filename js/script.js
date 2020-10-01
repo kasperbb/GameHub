@@ -18,11 +18,6 @@ const tabsFunc = () => {
 		elem.classList.add('active');
 	};
 
-	// Find active panel
-	const findActivePanel = index => {
-		return DOM.panels[index];
-	};
-
 	// Set active panel class
 	const setActivePanel = index => {
 		DOM.panels.forEach(el => {
@@ -44,9 +39,6 @@ const tabsFunc = () => {
 
 			// Set active nav item
 			setActiveItem(clickedTab);
-
-			// Find active panel
-			findActivePanel(activeItemIndex);
 
 			// Set active panel
 			setActivePanel(activeItemIndex);
