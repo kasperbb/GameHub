@@ -5,6 +5,7 @@ window.addEventListener('load', () => {
 
 const shoppingCartModal = () => {
 	const DOM = {
+		modal                   : document.querySelector('.modal--shopping-cart'),
 		modalButtonShoppingCart : document.querySelectorAll('.modal-button--shopping-cart'),
 		modalShoppingCart       : document.querySelector('.modal--shopping-cart'),
 		modalClose              : document.querySelector('modal__close'),
@@ -34,10 +35,18 @@ const shoppingCartModal = () => {
 			setInactiveShoppingCartModal();
 		}
 	});
+
+	// Exit if background is clicked
+	DOM.modal.addEventListener('click', event => {
+		if (event.target.classList.contains('modal')) {
+			setInactiveShoppingCartModal();
+		}
+	});
 };
 
 const favoriteModal = () => {
 	const DOM = {
+		modal               : document.querySelector('.modal--favorite'),
 		modalButtonFavorite : document.querySelectorAll('.modal-button--favorite'),
 		modalFavorite       : document.querySelector('.modal--favorite'),
 		modalClose          : document.querySelector('modal__close'),
@@ -64,6 +73,13 @@ const favoriteModal = () => {
 		// Check if we click on a nav item
 		if (event.target.classList.contains(closeClass)) {
 			// Set active panel
+			setInactiveFavoriteModal();
+		}
+	});
+
+	// Exit if background is clicked
+	DOM.modal.addEventListener('click', event => {
+		if (event.target.classList.contains('modal')) {
 			setInactiveFavoriteModal();
 		}
 	});
