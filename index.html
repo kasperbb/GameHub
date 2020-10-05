@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>GameHub</title>
-        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/product-card.css">
+        <link rel="stylesheet" href="styles/modal.css">
+        <link rel="stylesheet" href="styles/index.css">
         <link rel="stylesheet" href="styles/utilities.css">
 
         <!-- Fonts -->
@@ -17,6 +19,7 @@
 
         <script src="https://kit.fontawesome.com/2540fdf7f0.js" crossorigin="anonymous"></script>
         <script src="js/modal.js"></script>
+        <script src="js/dropdown.js"></script>
     </head>
     <body>
 
@@ -26,6 +29,46 @@
                     <img src="https://raw.githubusercontent.com/NoroffFEU/first-year-cross-course-assignment-brief-three/master/GameHub_Logo.png" width="100" alt="Logo">
                 </a>
             </div>
+
+            <nav>
+                <div class="dropdown-nav">
+                    <button>Store</button>
+                </div>
+                
+                <div class="dropdown hidden">
+                    <div class="dropdown__section">
+                        <h3 class="dropdown__header">Games</h3>
+                        <div class="dropdown__divider"></div>
+                        <div class="dropdown__body">
+                            <a href="#0" class="dropdown__item">PC Games</a>
+                            <a href="#0" class="dropdown__item">Xbox Games</a>
+                            <a href="#0" class="dropdown__item">Playstation Games</a>
+                            <a href="#0" class="dropdown__item">Used Games</a>
+                        </div>
+                    </div>
+                    <div class="dropdown__section">
+                        <h3 class="dropdown__header">Games</h3>
+                        <div class="dropdown__divider"></div>
+                        <div class="dropdown__body">
+                            <a href="#0" class="dropdown__item">PC Games</a>
+                            <a href="#0" class="dropdown__item">Xbox Games</a>
+                            <a href="#0" class="dropdown__item">Playstation Games</a>
+                            <a href="#0" class="dropdown__item">Used Games</a>
+                        </div>
+                    </div>
+                    <div class="dropdown__section">
+                        <h3 class="dropdown__header">Games</h3>
+                        <div class="dropdown__divider"></div>
+                        <div class="dropdown__body">
+                            <a href="#0" class="dropdown__item">PC Games</a>
+                            <a href="#0" class="dropdown__item">Xbox Games</a>
+                            <a href="#0" class="dropdown__item">Playstation Games</a>
+                            <a href="#0" class="dropdown__item">Used Games</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
 
             <div class="search">
                 <form>
@@ -51,6 +94,8 @@
                 </a>
             </div>
         </header>
+
+        <div id="dropdown-overlay"></div>
         
         <main>
 
@@ -90,7 +135,7 @@
 
                 <div class="grid-header">
                     <h2 class="trending__title">Trending</h2>
-                    <a class="small-button" href="product-list.html">Discover all</a>
+                    <a class="small-button" href="product-grid.html">Discover all</a>
                 </div>                
 
                 <div class="grid-body">
@@ -214,7 +259,7 @@
             
                 <div class="grid-header">
                     <h2 class="bestsellers__title">Bestsellers</h2>
-                    <a class="small-button" href="product-list.html">Discover all</a>
+                    <a class="small-button" href="product-grid.html">Discover all</a>
                 </div>
             
                 <div class="grid-body">
@@ -445,7 +490,7 @@
             
                 <div class="grid-header">
                     <h2 class="trending__title">Pre-Order</h2>
-                    <a class="small-button" href="product-list.html">Discover all</a>
+                    <a class="small-button" href="product-grid.html">Discover all</a>
                 </div>
             
                 <div class="grid-body">
