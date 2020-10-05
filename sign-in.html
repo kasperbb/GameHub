@@ -11,27 +11,26 @@
         <main>
             <div class="card">
                 <h1>Sign In</h1>
-                <form>
-
-                    <div class="email">
+                <form action="submit.php" method="GET">
+                    <fieldset class="email">
                         <label for="email">Email</label>
-                        <input type="text" name="email" placeholder="example@gmail.com">
-                    </div>
-                    <div class="password">
+                        <input type="email" name="email" placeholder="example@gmail.com">
+                    </fieldset>
+                    <fieldset class="password">
                         <label for="password">Password</label>
                         <input type="password" name="password" placeholder="Password">
-                    </div>
-                    <div class="remember">
+                    </fieldset>
+                    <fieldset class="remember">
                         <input type="checkbox" name="remember">
                         <p>Remember me</p>
-                    </div>
-                    <div class="submit">
+                    </fieldset>
+                    <fieldset class="submit">
                         <button>Sign in</button>
                         <div class="submit__message">
                             <p>Don't have an account?</p>
                             <a href="sign-up.html">Sign up</a>
                         </div>
-                    </div>
+                    </fieldset>
                 </form>
             </div>
         </main>

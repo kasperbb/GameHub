@@ -37,7 +37,9 @@ form {
 
 input[type=text],
 input[type=password],
-input[type=email] {
+input[type=email],
+input[type=date],
+select {
 	display: flex;
 	flex-direction: column;
 	padding: 1rem;
