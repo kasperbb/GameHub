@@ -11,6 +11,13 @@
 
 html {
 	font-family: 'Roboto', 'Courier New', Courier, monospace;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*::after {
+	box-sizing: inherit;
 }
 
 body {
@@ -50,8 +57,17 @@ header {
 	z-index: 999;
 }
 
-header .dropdown-nav {
-	padding: 1rem;
+header nav .dropdown-button button {
+	border: none;
+	background-color: transparent;
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: 600;
+	font-family: 'Roboto';
+}
+
+header nav .dropdown-button button > i {
+	padding-left: .25rem;
 }
 
 header .dropdown.hidden {
@@ -103,7 +119,9 @@ header .dropdown .dropdown__body {
 
 header .dropdown .dropdown__body > .dropdown__item {
 	width: 100%;
-	padding: 0.7rem 0;
+	padding: 0.7rem;
+	margin-left: -0.7rem;
+	border-radius: 4px;
 	text-decoration: none;
 	color: var(--black);
 }
@@ -157,6 +175,9 @@ header .sign-up a {
 	-webkit-border-radius: 50%;
 }
 
+/* Hero
+-------------------------------*/
+
 main .hero {
 	display: flex;
 	align-items: center;
@@ -170,6 +191,9 @@ main .hero {
 	display: flex;
 	flex-direction: column;
 }
+
+/* Call to Action
+-------------------------------*/
 
 main .call-to-action {
 	display: flex;
@@ -185,6 +209,10 @@ main .call-to-action h1 {
 
 main .call-to-action .actions {
 	color: #ffffff;
+}
+
+main .call-to-action .actions span {
+	margin: 0 1rem;
 }
 
 main .call-to-action .actions button {
@@ -204,14 +232,18 @@ main .call-to-action .actions button:hover {
 	cursor: pointer;
 }
 
+/* Categories
+-------------------------------*/
+
 main .categories {
 	display: flex;
 	flex-direction: row;
-	margin-bottom: -10rem;
-	margin-top: 10rem;
+	position: absolute;
+	top: 400px;
 }
 
-/* Category Card */
+/* Category Card
+-------------------------------*/
 .category-card {
 	display: flex;
 	flex-direction: column;
@@ -221,7 +253,6 @@ main .categories {
 	border-radius: 4px;
 	margin: 1rem;
 	padding: 1rem;
-	width: 13rem;
 }
 
 .category-card img {
@@ -235,10 +266,8 @@ main .categories {
 	margin-bottom: 1rem;
 }
 
-/*
-	Grid
-*/
-
+/* Grid
+-------------------------------*/
 .trending,
 .bestsellers,
 .pre-order {
@@ -261,9 +290,8 @@ main .categories {
 	grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
 }
 
-/*
-	Small button
-*/
+/* Small button
+-------------------------------*/
 .small-button {
 	display: flex;
 	align-items: center;

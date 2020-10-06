@@ -4,9 +4,9 @@ window.addEventListener('load', () => {
 
 const navDropdown = () => {
 	const DOM = {
-		overlay       : document.querySelector('#dropdown-overlay'),
-		dropdownNav   : document.querySelector('.dropdown-nav'),
-		dropdownPanel : document.querySelector('.dropdown'),
+		overlay        : document.querySelector('#dropdown-overlay'),
+		dropdownButton : document.querySelector('.dropdown-button'),
+		dropdownPanel  : document.querySelector('.dropdown'),
 	};
 
 	// Remove hidden class from dropdown panel
@@ -24,7 +24,7 @@ const navDropdown = () => {
 		}
 	};
 
-	DOM.dropdownNav.addEventListener('click', event => {
+	DOM.dropdownButton.addEventListener('click', event => {
 		hiddenClass(DOM.dropdownPanel);
 	});
 
