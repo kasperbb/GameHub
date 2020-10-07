@@ -5,6 +5,8 @@
 	--success-color: #34b138;
 	--light-gray: #e0e0e0;
 	--dark-gray: #707070;
+	--white: #ffffff;
+	--black: #000000;
 }
 
 /* Border colors */
@@ -358,4 +360,34 @@
 }
 .pl-10 {
 	padding-left: 10rem;
+}
+
+/* Buttons
+-----------------------*/
+.button-red {
+	font-size: 1rem;
+	font-weight: 800;
+	font-family: 'Roboto';
+	color: white;
+	border: none;
+	border-radius: 4px;
+	background-color: var(--warn-color);
+	padding: 0.7rem 2rem;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.button-blue {
+	font-size: 1rem;
+	font-weight: 800;
+	font-family: 'Roboto';
+	color: white;
+	border: none;
+	border-radius: 4px;
+	background-color: var(--secondary-color);
+	padding: 0.7rem 2rem;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
 }
