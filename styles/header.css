@@ -1,0 +1,235 @@
+:root {
+	--primary-color: #1b203d;
+	--secondary-color: #2699fb;
+	--warn-color: #fa4b3d;
+	--success-color: #34b138;
+	--light-gray: #e0e0e0;
+	--dark-gray: #707070;
+	--white: #ffffff;
+	--black: #000000;
+}
+
+#dropdown-overlay {
+	visibility: hidden;
+	opacity: 0;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.2);
+	transition: visibility 0s, opacity 0.2s linear;
+}
+
+#dropdown-overlay.active {
+	visibility: visible;
+	opacity: 100;
+}
+
+/* Header
+-------------------------------*/
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	background-color: var(--white);
+	max-height: 5.25rem;
+}
+
+/* Logo
+-------------------------------*/
+header .logo {
+	margin: 1rem 5rem 1rem 0rem;
+	padding-left: 5rem;
+}
+
+/* Hamburger Icon
+-------------------------------*/
+header .hamburger {
+	display: none;
+	padding-right: 5rem;
+}
+
+header .hamburger:hover {
+	cursor: pointer;
+}
+
+/* Navigation
+-------------------------------*/
+header nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+/* Dropdown
+-------------------------------*/
+header nav .dropdown-button button {
+	border: none;
+	background-color: transparent;
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: 600;
+	font-family: 'Roboto';
+}
+
+header nav .dropdown-button button > i {
+	padding-left: .25rem;
+}
+
+header .dropdown.hidden {
+	visibility: hidden;
+	opacity: 0;
+	top: 100px;
+	transition: all 0.2s ease 0s;
+}
+
+header .dropdown {
+	z-index: 99;
+	display: grid;
+	grid-gap: 0;
+	/* grid-template-columns: repeat(3, 1fr); */
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	top: 84px;
+	width: 70%;
+	padding: 1rem;
+	position: absolute;
+	background-color: var(--white);
+	border-top: 2px solid var(--light-gray);
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	transition: all 0.2s ease 0s;
+}
+
+header .dropdown .dropdown__section {
+	margin: 0 1rem;
+}
+
+header .dropdown .dropdown__body {
+	margin-top: 0.5rem;
+}
+
+header .dropdown .dropdown__divider {
+	border-bottom: 1px solid var(--light-gray);
+}
+
+header .dropdown .dropdown__header {
+	margin-bottom: 0;
+	padding: 0.7rem 0;
+}
+
+header .dropdown .dropdown__body {
+	display: flex;
+	flex-direction: column;
+}
+
+header .dropdown .dropdown__body > .dropdown__item {
+	width: 100%;
+	padding: 0.7rem;
+	margin-left: -0.7rem;
+	border-radius: 4px;
+	text-decoration: none;
+	color: var(--black);
+}
+
+header .dropdown .dropdown__body > .dropdown__item:hover {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Search bar
+-------------------------------*/
+header form {
+	display: flex;
+	flex-direction: row;
+}
+
+header .search input[type=text] {
+	padding: 1rem;
+	box-sizing: border-box;
+	border: 2px solid var(--primary-color);
+	border-radius: 4px 0px 0px 4px;
+}
+
+header .search button {
+	text-decoration: none;
+	color: #ffffff;
+	background-color: var(--primary-color);
+	margin-left: -0.5rem;
+	padding: 17px;
+	border: 1px solid var(--primary-color);
+	border-radius: 0px 4px 4px 0px;
+}
+
+/* Shopping Cart & Favorites
+-------------------------------*/
+header .actions {
+	display: flex;
+}
+
+header .actions a {
+	text-decoration: none;
+	color: var(--primary-color);
+	margin: 1rem;
+	padding: 1rem;
+	border: 1px solid #e0e0e0;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+
+header .actions a:hover {
+	background-color: #fafafa;
+}
+
+/* Sign Up
+-------------------------------*/
+header .sign-up a {
+	text-decoration: none;
+	color: var(--primary-color);
+	margin: 1rem;
+	padding: 1rem;
+	border: 1px solid #e0e0e0;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+
+/* Media Queries
+-------------------------------*/
+@media only screen and (max-width: 1024px) {
+	header,
+	header nav {
+		flex-direction: column;
+	}
+
+	header nav {
+		display: none;
+	}
+
+	header .hamburger {
+		display: block;
+	}
+
+	header .dropdown-button,
+	header .search,
+	header .actions,
+	header .sign-up {
+		margin-bottom: 2rem;
+	}
+
+	header .actions {
+		flex-direction: column;
+	}
+
+	header .hamburger {
+		padding: 0;
+	}
+}
