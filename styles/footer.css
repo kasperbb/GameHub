@@ -60,6 +60,7 @@ footer .footer__social li a.youtube:hover {
 footer .footer__information {
 	display: flex;
 	margin-bottom: 2rem;
+	padding-bottom: 1rem;
 	border-bottom: 1px solid var(--dark-gray);
 }
 
