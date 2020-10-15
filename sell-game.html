@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | GameHub</title>
+    <link rel="stylesheet" href="styles/sell-game.css">
+    <script src="https://kit.fontawesome.com/2540fdf7f0.js" crossorigin="anonymous"></script>
+
+    <script src="js/sell-game.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="back">
+            <a href="javascript:history.back()">
+                <i class="fas fa-angle-left"></i> Back
+            </a>
+        </div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://raw.githubusercontent.com/NoroffFEU/first-year-cross-course-assignment-brief-three/master/GameHub_Logo.png"
+                    width="100" alt="Logo">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="card">
+            <div class="card__header">
+                <div class="card__nav active">
+                    <span class="card__nav-number">1</span> Seller details
+                </div>
+                <div class="card__divider"></div>
+                <div class="card__nav">
+                    <span class="card__nav-number">2</span> Game details
+                </div>
+                <div class="card__divider"></div>
+                <div class="card__nav">
+                    <span class="card__nav-number">3</span> Done
+                </div>
+            </div>
+
+            <!-- Seller Details
+            ------------------------------>
+            <form class="card__form card__form--seller-details active" action="submit.php" method="GET">
+                <fieldset class="name">
+                    <label for="name">Full name</label>
+                    <input type="text" name="name" placeholder="John Doe">
+                </fieldset>
+                <fieldset class="zip-code">
+                    <label for="zip-code">Zip code</label>
+                    <input type="text" name="zip-code" placeholder="4070">
+                </fieldset>
+                <fieldset class="date-of-birth">
+                    <label for="date-of-birth">Date of birth</label>
+                    <input type="date" name="date-of-birth">
+                </fieldset>
+                <fieldset class="state">
+                    <label for="state">State</label>
+                    <input type="text" name="state" placeholder="Rogaland">
+                </fieldset>
+                <fieldset class="country">
+                    <label for="country">Country</label>
+                    <input type="text" name="country" placeholder="example@gmail.com">
+                </fieldset>
+                <fieldset class="address">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" placeholder="Vistnesveien 5">
+                </fieldset>
+                <fieldset class="city">
+                    <label for="city">City</label>
+                    <input type="text" name="city" placeholder="Randaberg">
+                </fieldset>
+                <fieldset class="phone">
+                    <label for="phone">Phone number</label>
+                    <input type="tel" name="phone" placeholder="+47 911 00 853">
+                </fieldset>
+                <fieldset class="action">
+                    <button type="button" class="back-button">Back</button>
+                </fieldset>
+                <fieldset class="action">
+                    <button type="button" class="next-button">Next</button>
+                </fieldset>
+            </form>
+            <!-- / Seller Details
+            ------------------------------>
+
+            <!-- Game Details
+            ------------------------------>
+            <form class="card__form card__form--game-details" action="submit.php" method="GET">
+                <fieldset class="game-title">
+                    <label for="title">Game title</label>
+                    <input type="text" name="title" placeholder="John Doe">
+                </fieldset>
+                <fieldset class="game-price">
+                    <label for="price">Price</label>
+                    <input type="number" name="price" placeholder="24">
+                </fieldset>
+                <fieldset class="game-description">
+                    <label for="description">Game description</label>
+                    <textarea name="description" id="description" cols="30" rows="5"></textarea>
+                </fieldset>
+                <fieldset class="game-image">
+                    <label for="image">Game image</label>
+                    <input type="file" id="image" name="image">
+                </fieldset>
+                <fieldset class="game-key">
+                    <label for="key">Game key</label>
+                    <input type="text" name="key" placeholder="ABC12 - 356TY - AB0OQ - 45TRG">
+                </fieldset>
+                <fieldset class="action">
+                    <button type="button" class="back-button">Back</button>
+                </fieldset>
+                <fieldset class="action">
+                    <button type="button" class="next-button">Next</button>
+                </fieldset>
+            </form>
+            <!-- / Game Details
+            ------------------------------>
+
+            <!-- Game Done
+            ------------------------------>
+            <div class="card__form card__form--game-done">
+                <i class="fas fa-check-circle"></i>
+                <h3>Game successfully put for sale</h3>
+            </div>
+            <!-- / Game Done
+            ------------------------------>
+
+        </div>
+    </main>
+
+</body>
+
+</html>
