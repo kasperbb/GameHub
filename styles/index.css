@@ -42,7 +42,8 @@ main section.hero {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	background: url('../images/universe.jpg') no-repeat center center fixed;
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+		url('../images/universe.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
