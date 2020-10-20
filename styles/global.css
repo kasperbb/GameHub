@@ -12,7 +12,7 @@
 	transition: 0.3s;
 }
 
-.btn-red:hover {
+.btn-shadow:hover {
 	-webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
 	-moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
 	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
@@ -28,12 +28,6 @@
 	background-color: var(--secondary);
 	border-radius: var(--border-radius);
 	transition: 0.3s;
-}
-
-.btn-blue:hover {
-	-webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
-	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .btn-clear {
@@ -56,5 +50,12 @@
 	text-decoration: none;
 	color: var(--white);
 	background-color: var(--secondary);
+	border: 2px solid var(--secondary);
 	border-radius: var(--border-radius);
+}
+
+.btn-blue--sm:hover {
+	border: 2px solid var(--secondary);
+	background-color: transparent;
+	color: var(--secondary);
 }

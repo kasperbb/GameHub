@@ -36,6 +36,7 @@ main {
 /* Product
 -------------------------------*/
 .product {
+	margin: 50px 5%;
 }
 
 .product__title {
@@ -44,6 +45,7 @@ main {
 
 .product__container {
 	display: flex;
+	flex-direction: column;
 }
 
 .product__image {
@@ -51,11 +53,11 @@ main {
 }
 
 .product__image img {
-	width: 50rem;
+	width: 100%;
 }
 
 .product__info {
-	width: 30rem;
+	width: 100%;
 }
 
 .product__info button {
@@ -71,7 +73,7 @@ main {
 }
 
 .product__info h3 {
-	color: var(--primary-color);
+	color: var(--primary);
 }
 
 .product__images {
@@ -88,17 +90,20 @@ main {
 }
 
 .similar-products {
-	margin: 0 5%;
+	margin: 50px 5% 3% 5%;
 }
 
+/* Grid
+-------------------------------*/
 .grid-header {
 	display: flex;
 	justify-content: space-between;
+	padding-bottom: 1rem;
 }
 
 .grid-header h2 {
 	color: var(--primary);
-	margin: 1rem 0;
+	margin: 0;
 }
 
 .grid-body {
@@ -107,9 +112,8 @@ main {
 	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
-/*
-    Product Information
-*/
+/* Product Information
+-------------------------------*/
 .product-information {
 	display: flex;
 	flex-direction: column;
@@ -125,18 +129,19 @@ main {
 	margin-bottom: 25px;
 }
 
+/* Tabs
+-------------------------------*/
 .tabs__nav {
 	display: flex;
 	margin-bottom: 1rem;
 	border-bottom: 1px solid var(--light-gray);
 	text-transform: uppercase;
-	color: var(--primary-color);
-	font-size: 1.5rem;
+	color: var(--primary);
 }
 
 .tabs__nav h4 {
 	margin: 0;
-	margin-right: 5rem;
+	margin-right: 2rem;
 	padding-bottom: 1rem;
 }
 
@@ -148,11 +153,22 @@ main {
 	cursor: pointer;
 }
 
+.tabs__panel {
+	padding-top: 1rem;
+	display: none;
+}
+
+.active {
+	display: unset;
+}
+
+/* Product Reviews
+-------------------------------*/
 .product__reviews-header {
 	padding-bottom: 1rem;
 	border-bottom: 1px solid var(--light-gray);
 	text-transform: uppercase;
-	color: var(--primary-color);
+	color: var(--primary);
 	font-size: 1.5rem;
 	margin: 0;
 }
@@ -175,11 +191,44 @@ main {
 	margin-bottom: 1rem;
 }
 
-.tabs__panel {
-	padding-top: 1rem;
-	display: none;
-}
+/* Media Queries
+-------------------------------*/
+@media only screen and (min-width: 1024px) {
+	/* Product
+	-----------------------*/
+	.product__image img {
+		width: 50rem;
+	}
 
-.active {
-	display: unset;
+	.product__info {
+		width: 30rem;
+	}
+
+	.product__container {
+		flex-direction: row;
+	}
+
+	/* Product Information
+	-----------------------*/
+	.product-information {
+		flex-direction: row;
+	}
+
+	.product-information__card.left {
+		margin-right: 0.5rem;
+	}
+
+	.product-information__card.right {
+		margin-left: 0.5rem;
+	}
+
+	/* Tabs
+	-----------------------*/
+	.tabs__nav {
+		font-size: 1.5rem;
+	}
+
+	.tabs__nav h4 {
+		margin-right: 5rem;
+	}
 }
