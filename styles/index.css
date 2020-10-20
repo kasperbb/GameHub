@@ -1,12 +1,15 @@
 :root {
-	--primary-color: #1b203d;
-	--secondary-color: #2699fb;
-	--warn-color: #fa4b3d;
-	--success-color: #34b138;
+	--primary: #1b203d;
+	--secondary: #2699fb;
+	--warn: #fa4b3d;
+	--success: #34b138;
 	--light-gray: #e0e0e0;
+	--lighter-gray: #eeeeee;
 	--dark-gray: #707070;
+	--darker-gray: #262626;
 	--white: #ffffff;
 	--black: #000000;
+	--border-radius: 4px;
 }
 
 html {
@@ -26,139 +29,155 @@ body {
 	background-color: #f9f9f9;
 }
 
+/* Main Margin
+-------------------------------*/
+section:not(.hero) {
+	margin: 35% 10%;
+}
+
 /* Hero
 -------------------------------*/
-
-main .hero {
+main section.hero {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-image: url('../images/background.png');
-	background-color: #002046;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 500px;
-	display: flex;
 	flex-direction: column;
+	background: url('../images/universe.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 5rem;
+	height: 600px;
+}
+
+main section.hero h1 {
+	margin: 0;
+	margin-bottom: 2rem;
+	color: var(--white);
+	text-transform: uppercase;
+	font-size: 2rem;
 }
 
 /* Call to Action
 -------------------------------*/
-
-main .call-to-action {
+section.hero .call-to-action {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
 }
 
-main .call-to-action h1 {
-	color: #ffffff;
-	text-transform: uppercase;
+section.hero .call-to-action .actions {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: var(--white);
+	font-size: 28px;
+	font-weight: 600;
 }
 
-main .call-to-action .actions {
-	color: #ffffff;
-}
-
-main .call-to-action .actions span {
-	margin: 0 1rem;
-}
-
-main .call-to-action .actions a {
-	background-color: red;
-	border: none;
-	border-radius: 4px;
-	color: white;
-	padding: 1rem 2rem;
-	text-align: center;
-	text-decoration: none;
-	font-weight: 800;
-	display: inline-block;
-	font-size: 16px;
-}
-
-main .call-to-action .actions a:hover {
-	cursor: pointer;
+section.hero .call-to-action .actions span {
+	margin: 1rem;
 }
 
 /* Categories
 -------------------------------*/
+section.categories .categories__header {
+	color: var(--primary);
+}
 
-main .categories {
-	display: flex;
-	flex-direction: row;
-	position: absolute;
-	top: 400px;
+section.categories .categories__grid {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	justify-items: center;
+	padding: 0 0 1rem 0;
 }
 
 /* Category Card
 -------------------------------*/
 .category-card {
 	display: flex;
-	flex-direction: column;
-	background-color: #ffffff;
-	color: var(--primary-color);
+	justify-content: center;
+	align-items: center;
+	color: black;
 	border: 1px solid #e0e0e0;
-	border-radius: 4px;
-	margin: 1rem;
-	padding: 1rem;
+	width: 100%;
+	height: 8rem;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-decoration: none;
 }
 
-.category-card img {
-	width: 13rem;
-	height: 100px;
-	object-fit: cover;
+.category-card.new-games {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/categories/new-games.jpg');
+}
+
+.category-card.used-games {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/categories/used-games.jpg');
+}
+
+.category-card.new-releases {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/categories/new-releases.jpg');
+}
+
+.category-card.gaming-accessories {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url('../images/categories/gaming-accessories.jpg');
 }
 
 .category-card h3 {
-	margin: 0;
-	margin-bottom: 1rem;
+	text-decoration: none;
+	color: var(--white);
+}
+
+.category-card i {
+	padding-left: 1rem;
+	color: var(--white);
+	-webkit-transition: transform 0.3s ease-out;
+	-moz-transition: transform 0.3s ease-out;
+	-ms-transition: transform 0.3s ease-out;
+	-o-transition: transform 0.3s ease-out;
+	transition: transform 0.3s ease-out;
+}
+
+.category-card:hover i {
+	-webkit-transform: translateX(8px);
+	-moz-transform: translateX(8px);
+	-ms-transform: translateX(8px);
+	-o-transform: translateX(8px);
+	transform: translateX(8px);
 }
 
 /* Grid
 -------------------------------*/
-.trending,
-.bestsellers,
-.pre-order {
-	margin: 15rem;
-}
-
 .grid-header {
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
-}
-
-.grid-header h2 {
-	color: var(--primary-color);
-	margin: 1rem 0;
+	color: var(--primary);
 }
 
 .grid-body {
 	display: grid;
-	grid-gap: 2rem;
-	grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+	gap: 2rem;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
-/* Small button
+/* Media Queries
 -------------------------------*/
-.small-button {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-decoration: none;
-	color: white;
-	background-color: var(--secondary-color);
-	border: 2px solid var(--secondary-color);
-	border-radius: 4px;
-	font-weight: 600;
-	margin: 1rem 0;
-	width: 122px;
-	height: 26px;
-}
+@media only screen and (min-width: 1024px) {
+	/* Main Margin
+	-----------------------*/
+	section:not(.hero) {
+		margin: 5% 10%;
+	}
 
-.small-button:hover {
-	color: var(--secondary-color);
-	background-color: transparent;
+	/* Call to Action
+	-----------------------*/
+	section.hero .call-to-action .actions {
+		flex-direction: row;
+	}
 }

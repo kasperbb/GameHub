@@ -5,10 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameHub</title>
-    <link rel="stylesheet" href="styles/product-card.css">
-    <link rel="stylesheet" href="styles/product-grid.css">
+
+    <!-- Style Components-->
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/modal.css">
-    <link rel="stylesheet" href="styles/utilities.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/product-card.css">
+    
+    <!-- File specific styles -->
+    <link rel="stylesheet" href="styles/product-grid.css">
 
     <!-- Fonts -->
     <link
@@ -19,71 +25,133 @@
         rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/2540fdf7f0.js" crossorigin="anonymous"></script>
+
+    <!-- Javascript Components -->
     <script src="js/modal.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/product-grid.js"></script>
 </head>
 
 <body>
 
-    <header class="flex align-center justify-between bg-white">
-        <div class="logo pl-5">
+    <header>
+    
+        <div class="logo">
             <a href="index.html">
                 <img src="https://raw.githubusercontent.com/NoroffFEU/first-year-cross-course-assignment-brief-three/master/GameHub_Logo.png"
                     width="100" alt="Logo">
             </a>
         </div>
-
-        <div class="search">
-            <form>
-                <input type="text" name="search" id="search">
-                <button>
-                    <i class="fas fa-search"></i>
+    
+        <nav id="nav" role="navigation">
+            <div class="dropdown-button">
+                <button class="btn-clear">
+                    Store
+                    <i class="fas fa-angle-down"></i>
                 </button>
-            </form>
+            </div>
+    
+            <div class="dropdown hidden">
+                <div class="dropdown__section">
+                    <h3 class="dropdown__header">Games</h3>
+                    <div class="dropdown__divider"></div>
+                    <div class="dropdown__body">
+                        <a href="#0" class="dropdown__item">PC Games</a>
+                        <a href="#0" class="dropdown__item">Xbox Games</a>
+                        <a href="#0" class="dropdown__item">Playstation Games</a>
+                        <a href="#0" class="dropdown__item">Used Games</a>
+                    </div>
+                </div>
+                <div class="dropdown__section">
+                    <h3 class="dropdown__header">Games</h3>
+                    <div class="dropdown__divider"></div>
+                    <div class="dropdown__body">
+                        <a href="#0" class="dropdown__item">PC Games</a>
+                        <a href="#0" class="dropdown__item">Xbox Games</a>
+                        <a href="#0" class="dropdown__item">Playstation Games</a>
+                        <a href="#0" class="dropdown__item">Used Games</a>
+                    </div>
+                </div>
+                <div class="dropdown__section">
+                    <h3 class="dropdown__header">Games</h3>
+                    <div class="dropdown__divider"></div>
+                    <div class="dropdown__body">
+                        <a href="#0" class="dropdown__item">PC Games</a>
+                        <a href="#0" class="dropdown__item">Xbox Games</a>
+                        <a href="#0" class="dropdown__item">Playstation Games</a>
+                        <a href="#0" class="dropdown__item">Used Games</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="search">
+                <form>
+                    <input type="text" name="search" id="search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+    
+            <div class="actions modal-buttons">
+                <a href="#" class="modal-button--shopping-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <a href="#" class="modal-button--favorite">
+                    <i class="fas fa-heart"></i>
+                </a>
+            </div>
+    
+            <div class="sign-up">
+                <a href="sign-in.html">
+                    <i class="fas fa-sign-in-alt"></i>
+                </a>
+            </div>
+        </nav>
+    
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
         </div>
-
-        <div class="actions">
-            <a href="#" class="modal-button--shopping-cart">
-                <i class="fas fa-shopping-cart"></i>
-            </a>
-            <a href="#" class="modal-button--favorite">
-                <i class="fas fa-heart"></i>
-            </a>
-        </div>
-
-        <div class="sign-up">
-            <a href="sign-in.html">
-                <i class="fas fa-sign-in-alt"></i>
-            </a>
-        </div>
+    
     </header>
+    
+    <div id="dropdown-overlay"></div>
 
     <main>
 
-        <div class="top-bar">
+        <section class="top-bar">
             <div class="top-bar__title">
                 <h1>Trending games</h1>
             </div>
             <div class="top-bar__actions">
                 <div class="top-bar__view">
-                    <i class="fas fa-th active"></i>
-                    <a href="product-list.html">
-                        <i class="fas fa-th-list"></i>
+                    <a href="javascript:void(0)">
+                        <i class="fas fa-th view__icon active"></i>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <i class="fas fa-th-list view__icon"></i>
                     </a>
                 </div>
                 <div class="top-bar__sort">
                     <label for="sort">Sort by</label>
                     <select name="sort" id="sort">
-                        <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="mercedes">Mercedes</option>
-                        <option value="audi">Audi</option>
+                        <option value="most_relevant">Most relevant</option>
+                        <option value="trending">Trending</option>
+                        <option value="bestsellers">Bestsellers</option>
+                        <option value="newest">Newest</option>
+                        <option value="oldest">Oldest</option>
                     </select>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="content">
+        <section class="content">
             <div class="side-bar">
+                <div class="more-options">
+                    <button class="btn-clear">
+                        More options
+                        <i class="fas fa-angle-down"></i>
+                    </button>
+                </div>
                 <div class="categories">
                     <h3>Categories</h3>
                     <form>
@@ -116,15 +184,14 @@
                     </form>
                 </div>
             </div>
-            <div class="product-grid">
-
+            <div class="product-grid" id="product-grid">
                 <div class="product-card">
                     <img src="images/game-covers/destiny_2.jpg" alt="Destiny 2">
                     <div class="product-card__title">
                         <a href="product.html">Destiny 2</a>
                         <p>PS4</p>
                     </div>
-                    <div class="product-card__content">
+                    <div class="product-card__body">
                         <div class="product-card__price">
                             $60
                         </div>
@@ -145,7 +212,7 @@
                         <a href="product.html">Cyberpunk 2077</a>
                         <p>PS4</p>
                     </div>
-                    <div class="product-card__content">
+                    <div class="product-card__body">
                         <div class="product-card__price">
                             $60
                         </div>
@@ -166,7 +233,7 @@
                         <a href="product.html">Call of Duty: Infinite Warfare</a>
                         <p>PS4</p>
                     </div>
-                    <div class="product-card__content">
+                    <div class="product-card__body">
                         <div class="product-card__price">
                             $60
                         </div>
@@ -187,7 +254,7 @@
                         <a href="product.html">Assassin's Creed Odyssey</a>
                         <p>PS4</p>
                     </div>
-                    <div class="product-card__content">
+                    <div class="product-card__body">
                         <div class="product-card__price">
                             $60
                         </div>
@@ -208,7 +275,7 @@
                         <a href="product.html">FIFA 21 Standard Edition</a>
                         <p>PS4</p>
                     </div>
-                    <div class="product-card__content">
+                    <div class="product-card__body">
                         <div class="product-card__price">
                             $60
                         </div>
@@ -229,7 +296,7 @@
                         <a href="product.html">Destiny 2</a>
                         <p>PS4</p>
                     </div>
-                    <div class="product-card__content">
+                    <div class="product-card__body">
                         <div class="product-card__price">
                             $60
                         </div>
@@ -250,7 +317,7 @@
                         <a href="product.html">Cyberpunk 2077</a>
                         <p>PS4</p>
                     </div>
-                    <div class="product-card__content">
+                    <div class="product-card__body">
                         <div class="product-card__price">
                             $60
                         </div>
@@ -271,7 +338,7 @@
                         <a href="product.html">Call of Duty: Infinite Warfare</a>
                         <p>PS4</p>
                     </div>
-                    <div class="product-card__content">
+                    <div class="product-card__body">
                         <div class="product-card__price">
                             $60
                         </div>
@@ -292,7 +359,7 @@
                         <a href="product.html">Assassin's Creed Odyssey</a>
                         <p>PS4</p>
                     </div>
-                    <div class="product-card__content">
+                    <div class="product-card__body">
                         <div class="product-card__price">
                             $60
                         </div>
@@ -313,7 +380,7 @@
                         <a href="product.html">FIFA 21 Standard Edition</a>
                         <p>PS4</p>
                     </div>
-                    <div class="product-card__content">
+                    <div class="product-card__body">
                         <div class="product-card__price">
                             $60
                         </div>
@@ -334,7 +401,7 @@
                         <a href="product.html">Destiny 2</a>
                         <p>PS4</p>
                     </div>
-                    <div class="product-card__content">
+                    <div class="product-card__body">
                         <div class="product-card__price">
                             $60
                         </div>
@@ -355,7 +422,7 @@
                         <a href="product.html">Cyberpunk 2077</a>
                         <p>PS4</p>
                     </div>
-                    <div class="product-card__content">
+                    <div class="product-card__body">
                         <div class="product-card__price">
                             $60
                         </div>
@@ -376,7 +443,7 @@
                         <a href="product.html">Call of Duty: Infinite Warfare</a>
                         <p>PS4</p>
                     </div>
-                    <div class="product-card__content">
+                    <div class="product-card__body">
                         <div class="product-card__price">
                             $60
                         </div>
@@ -397,7 +464,7 @@
                         <a href="product.html">Assassin's Creed Odyssey</a>
                         <p>PS4</p>
                     </div>
-                    <div class="product-card__content">
+                    <div class="product-card__body">
                         <div class="product-card__price">
                             $60
                         </div>
@@ -418,7 +485,7 @@
                         <a href="product.html">FIFA 21 Standard Edition</a>
                         <p>PS4</p>
                     </div>
-                    <div class="product-card__content">
+                    <div class="product-card__body">
                         <div class="product-card__price">
                             $60
                         </div>
@@ -432,14 +499,71 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-        </div>
+            <div class="pagination">
+                <div class="pagination__prev inactive">
+                    <i class="fas fa-angle-left"></i>
+                </div>
+                <div class="pagination__numbers">
+                    <div class="pagination__number active">1</div>
+                    <div class="pagination__number">2</div>
+                    <div class="pagination__number">3</div>
+                </div>
+                <div class="pagination__next">
+                    <i class="fas fa-angle-right"></i>
+                </div>
+            </div>
+        </section>
 
     </main>
 
-    <footer>
-        Copyright &copy;
+    <footer class="footer">
+        <div class="footer__container">
+            <ul class="footer__social">
+                <li>
+                    <a href="#0" class="facebook"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#0" class="twitter"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#0" class="youtube"><i class="fab fa-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__container flex">
+            <div class="footer__information">
+                <ul class="footer__information--gamehub">
+                    <li>GameHub</li>
+                    <li><a href="#0">News</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="footer__information--support">
+                    <li>Support</li>
+                    <li><a href="#0">FAQ</a></li>
+                    <li><a href="about.html">Returns & Refunds</a></li>
+                    <li><a href="contact.html">Support Hub</a></li>
+                </ul>
+                <ul class="footer__information--shortcuts">
+                    <li>Shortcuts</li>
+                    <li><a href="account.html">My account</a></li>
+                    <li><a href="#0">Redeem code</a></li>
+                    <li><a href="#0">Sell game</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__container">
+            <div class="footer__legal">
+                <a href="#0">Legal</a>
+                <a href="#0">Privacy Policy</a>
+                <a href="#0">Terms & Service</a>
+            </div>
+            <div class="footer__copyright">
+                &copy; Kasper Bø Bjørnø. All rights reserved. All trademarks and registered trademarks are the property of
+                their respective owners.
+            </div>
+        </div>
     </footer>
 
     <div class="modal modal--shopping-cart">
@@ -450,7 +574,6 @@
                 <h1 class="modal__title">Shopping Cart</h1>
             </div>
             <div class="modal__body">
-    
                 <div class="product-card--horizontal">
                     <img src="images/game-covers/assassins_creed_odyssey.png" alt="Assassin's Creed Odyssey">
                     <div class="product-card--horizontal__content">
@@ -468,11 +591,28 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="product-card--horizontal">
+                    <img src="images/game-covers/cyberpunk_2077.jpg" alt="Cyberpunk 2077">
+                    <div class="product-card--horizontal__content">
+                        <div class="product-card--horizontal__title">
+                            <a href="product.html">Cyberpunk 2077</a>
+                            <p>PS4</p>
+                        </div>
+                        <div class="product-card--horizontal__body">
+                            <div class="product-card--horizontal__actions">
+                                <a href="">remove from cart</a>
+                            </div>
+                            <div class="product-card--horizontal__price">
+                                $60
+                            </div>
+                        </div>
+                    </div>
+                </div>
     
                 <div class="modal__buttons">
     
                 </div>
-    
             </div>
         </div>
     </div>

@@ -4,12 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>GameHub</title>
+
+        <!-- Style Components-->
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/footer.css">
-        <link rel="stylesheet" href="styles/product-card.css">
         <link rel="stylesheet" href="styles/modal.css">
+        <link rel="stylesheet" href="styles/product-card.css"> 
+        <link rel="stylesheet" href="styles/global.css">
+        
+        <!-- File specific styles -->
         <link rel="stylesheet" href="styles/index.css">
-        <link rel="stylesheet" href="styles/utilities.css">
 
         <!-- Fonts -->
         <link
@@ -20,6 +24,8 @@
             rel="stylesheet">
 
         <script src="https://kit.fontawesome.com/2540fdf7f0.js" crossorigin="anonymous"></script>
+
+        <!-- Javascript Components -->
         <script src="js/modal.js"></script>
         <script src="js/dropdown.js"></script>
         <script src="js/header.js"></script>
@@ -27,7 +33,6 @@
     <body>
 
         <header>
-
             <div class="logo">
                 <a href="index.html">
                     <img src="https://raw.githubusercontent.com/NoroffFEU/first-year-cross-course-assignment-brief-three/master/GameHub_Logo.png" width="100" alt="Logo">
@@ -36,7 +41,7 @@
 
             <nav id="nav" role="navigation">
                 <div class="dropdown-button">
-                    <button>
+                    <button class="btn-clear">
                         Store
                         <i class="fas fa-angle-down"></i>
                     </button>
@@ -101,7 +106,6 @@
             <div class="hamburger" id="hamburger">
                 <i class="fas fa-bars"></i>
             </div>
-            
         </header>
 
         <div id="dropdown-overlay"></div>
@@ -112,27 +116,33 @@
                 <div class="call-to-action">
                     <h1>The universe of games</h1>
                     <div class="actions">
-                        <a href="sell-game.html">Start selling</a>
+                        <a class="btn-red" href="sell-game.html">Start selling</a>
                         <span>OR</span>
-                        <a href="product-grid.html">Start buying</a>
+                        <a class="btn-blue" href="product-grid.html">Start buying</a>
                     </div>
                 </div>                
-                <div class="categories">
-                    <a href="#" class="category-card">
+            </section>
+
+            <section class="categories">
+                <div class="categories__header">
+                    <h2>Categories</h2>
+                </div>
+                <div class="categories__grid">
+                    <a href="#" class="category-card new-games">
                         <h3>Brand new games</h3>
-                        <img src="images/categories/used-games.jpg" alt="Used games">
+                        <i class="fas fa-arrow-right"></i>
                     </a>
-                    <a href="#" class="category-card">
+                    <a href="#" class="category-card used-games">
                         <h3>Used games</h3>
-                        <img src="images/categories/used-games.jpg" alt="Used games">
+                        <i class="fas fa-arrow-right"></i>
                     </a>
-                    <a href="#" class="category-card">
+                    <a href="#" class="category-card new-releases">
                         <h3>New releases</h3>
-                        <img src="images/categories/used-games.jpg" alt="Used games">
+                        <i class="fas fa-arrow-right"></i>
                     </a>
-                    <a href="#" class="category-card">
+                    <a href="#" class="category-card gaming-accessories">
                         <h3>Gaming accessories</h3>
-                        <img src="images/categories/used-games.jpg" alt="Used games">
+                        <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
             </section>
@@ -143,7 +153,7 @@
 
                 <div class="grid-header">
                     <h2 class="trending__title">Trending</h2>
-                    <a class="small-button" href="product-grid.html">Discover all</a>
+                    <a class="btn-blue--sm" href="product-grid.html">Discover all</a>
                 </div>                
 
                 <div class="grid-body">
@@ -154,7 +164,7 @@
                             <a href="product.html">Destiny 2</a>
                             <p>PS4</p>
                         </div>
-                        <div class="product-card__content">
+                        <div class="product-card__body">
                             <div class="product-card__price">
                                 $60
                             </div>
@@ -175,7 +185,7 @@
                             <a href="product.html">Cyberpunk 2077</a>
                             <p>PS4</p>
                         </div>
-                        <div class="product-card__content">
+                        <div class="product-card__body">
                             <div class="product-card__price">
                                 $60
                             </div>
@@ -196,7 +206,7 @@
                             <a href="product.html">Call of Duty: Infinite Warfare</a>
                             <p>PS4</p>
                         </div>
-                        <div class="product-card__content">
+                        <div class="product-card__body">
                             <div class="product-card__price">
                                 $60
                             </div>
@@ -217,7 +227,7 @@
                             <a href="product.html">Assassin's Creed Odyssey</a>
                             <p>PS4</p>
                         </div>
-                        <div class="product-card__content">
+                        <div class="product-card__body">
                             <div class="product-card__price">
                                 $60
                             </div>
@@ -238,7 +248,7 @@
                             <a href="product.html">FIFA 21 Standard Edition</a>
                             <p>PS4</p>
                         </div>
-                        <div class="product-card__content">
+                        <div class="product-card__body">
                             <div class="product-card__price">
                                 $60
                             </div>
@@ -265,7 +275,7 @@
             
                 <div class="grid-header">
                     <h2 class="bestsellers__title">Bestsellers</h2>
-                    <a class="small-button" href="product-grid.html">Discover all</a>
+                    <a class="btn-blue--sm" href="product-grid.html">Discover all</a>
                 </div>
             
                 <div class="grid-body">
@@ -276,7 +286,7 @@
                             <a href="product.html">Destiny 2</a>
                             <p>PS4</p>
                         </div>
-                        <div class="product-card__content">
+                        <div class="product-card__body">
                             <div class="product-card__price">
                                 $60
                             </div>
@@ -297,7 +307,7 @@
                             <a href="product.html">Cyberpunk 2077</a>
                             <p>PS4</p>
                         </div>
-                        <div class="product-card__content">
+                        <div class="product-card__body">
                             <div class="product-card__price">
                                 $60
                             </div>
@@ -318,7 +328,7 @@
                             <a href="product.html">Call of Duty: Infinite Warfare</a>
                             <p>PS4</p>
                         </div>
-                        <div class="product-card__content">
+                        <div class="product-card__body">
                             <div class="product-card__price">
                                 $60
                             </div>
@@ -339,7 +349,7 @@
                             <a href="product.html">Assassin's Creed Odyssey</a>
                             <p>PS4</p>
                         </div>
-                        <div class="product-card__content">
+                        <div class="product-card__body">
                             <div class="product-card__price">
                                 $60
                             </div>
@@ -360,7 +370,7 @@
                             <a href="product.html">FIFA 21 Standard Edition</a>
                             <p>PS4</p>
                         </div>
-                        <div class="product-card__content">
+                        <div class="product-card__body">
                             <div class="product-card__price">
                                 $60
                             </div>
@@ -382,7 +392,7 @@
                             <a href="product.html">Call of Duty: Modern Warfare Remastered</a>
                             <p>PS4</p>
                         </div>
-                        <div class="product-card__content">
+                        <div class="product-card__body">
                             <div class="product-card__price">
                                 $60
                             </div>
@@ -404,7 +414,7 @@
                             <a href="product.html">Watch Dogs Legion</a>
                             <p>PS4</p>
                         </div>
-                        <div class="product-card__content">
+                        <div class="product-card__body">
                             <div class="product-card__price">
                                 $60
                             </div>
@@ -425,7 +435,7 @@
                             <a href="product.html">Borderlands: The Handsome Collection</a>
                             <p>PS4</p>
                         </div>
-                        <div class="product-card__content">
+                        <div class="product-card__body">
                             <div class="product-card__price">
                                 $60
                             </div>
@@ -446,7 +456,7 @@
                             <a href="product.html">Shadow of Mordor</a>
                             <p>PS4</p>
                         </div>
-                        <div class="product-card__content">
+                        <div class="product-card__body">
                             <div class="product-card__price">
                                 $60
                             </div>
@@ -467,7 +477,7 @@
                             <a href="product.html">Warframe</a>
                             <p>PS4</p>
                         </div>
-                        <div class="product-card__content">
+                        <div class="product-card__body">
                             <div class="product-card__price">
                                 $60
                             </div>
@@ -494,7 +504,7 @@
             
                 <div class="grid-header">
                     <h2 class="trending__title">Pre-Order</h2>
-                    <a class="small-button" href="product-grid.html">Discover all</a>
+                    <a class="btn-blue--sm" href="product-grid.html">Discover all</a>
                 </div>
             
                 <div class="grid-body">
@@ -505,7 +515,7 @@
                             <a href="product.html">Destiny 2</a>
                             <p>PS4</p>
                         </div>
-                        <div class="product-card__content">
+                        <div class="product-card__body">
                             <div class="product-card__price">
                                 $60
                             </div>
@@ -526,7 +536,7 @@
                             <a href="product.html">Cyberpunk 2077</a>
                             <p>PS4</p>
                         </div>
-                        <div class="product-card__content">
+                        <div class="product-card__body">
                             <div class="product-card__price">
                                 $60
                             </div>
@@ -547,7 +557,7 @@
                             <a href="product.html">Call of Duty: Infinite Warfare</a>
                             <p>PS4</p>
                         </div>
-                        <div class="product-card__content">
+                        <div class="product-card__body">
                             <div class="product-card__price">
                                 $60
                             </div>
@@ -568,7 +578,7 @@
                             <a href="product.html">Assassin's Creed Odyssey</a>
                             <p>PS4</p>
                         </div>
-                        <div class="product-card__content">
+                        <div class="product-card__body">
                             <div class="product-card__price">
                                 $60
                             </div>
@@ -589,7 +599,7 @@
                             <a href="product.html">FIFA 21 Standard Edition</a>
                             <p>PS4</p>
                         </div>
-                        <div class="product-card__content">
+                        <div class="product-card__body">
                             <div class="product-card__price">
                                 $60
                             </div>
@@ -626,7 +636,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer__container">
+            <div class="footer__container flex">
                 <div class="footer__information">
                     <ul class="footer__information--gamehub">
                         <li>GameHub</li>

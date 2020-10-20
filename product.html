@@ -5,8 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameHub</title>
+
+    <!-- Style Components-->
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/product-card.css">
+    <link rel="stylesheet" href="styles/global.css">
+
+    <!-- File specific styles -->
     <link rel="stylesheet" href="styles/product.css">
-    <link rel="stylesheet" href="styles/utilities.css">
 
     <!-- Fonts -->
     <link
@@ -17,43 +25,96 @@
         rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/2540fdf7f0.js" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+
+    <!-- Javascript Components -->
+    <script src="js/modal.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/product.js"></script>
 </head>
 
 <body>
 
-    <header class="flex align-center justify-between bg-white">
-        <div class="logo pl-5">
+    <header>
+    
+        <div class="logo">
             <a href="index.html">
                 <img src="https://raw.githubusercontent.com/NoroffFEU/first-year-cross-course-assignment-brief-three/master/GameHub_Logo.png"
                     width="100" alt="Logo">
             </a>
         </div>
-
-        <div class="search">
-            <form>
-                <input type="text" name="search" id="search">
-                <button>
-                    <i class="fas fa-search"></i>
+    
+        <nav id="nav" role="navigation">
+            <div class="dropdown-button">
+                <button class="btn-clear">
+                    Store
+                    <i class="fas fa-angle-down"></i>
                 </button>
-            </form>
+            </div>
+    
+            <div class="dropdown hidden">
+                <div class="dropdown__section">
+                    <h3 class="dropdown__header">Games</h3>
+                    <div class="dropdown__divider"></div>
+                    <div class="dropdown__body">
+                        <a href="#0" class="dropdown__item">PC Games</a>
+                        <a href="#0" class="dropdown__item">Xbox Games</a>
+                        <a href="#0" class="dropdown__item">Playstation Games</a>
+                        <a href="#0" class="dropdown__item">Used Games</a>
+                    </div>
+                </div>
+                <div class="dropdown__section">
+                    <h3 class="dropdown__header">Games</h3>
+                    <div class="dropdown__divider"></div>
+                    <div class="dropdown__body">
+                        <a href="#0" class="dropdown__item">PC Games</a>
+                        <a href="#0" class="dropdown__item">Xbox Games</a>
+                        <a href="#0" class="dropdown__item">Playstation Games</a>
+                        <a href="#0" class="dropdown__item">Used Games</a>
+                    </div>
+                </div>
+                <div class="dropdown__section">
+                    <h3 class="dropdown__header">Games</h3>
+                    <div class="dropdown__divider"></div>
+                    <div class="dropdown__body">
+                        <a href="#0" class="dropdown__item">PC Games</a>
+                        <a href="#0" class="dropdown__item">Xbox Games</a>
+                        <a href="#0" class="dropdown__item">Playstation Games</a>
+                        <a href="#0" class="dropdown__item">Used Games</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="search">
+                <form>
+                    <input type="text" name="search" id="search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+    
+            <div class="actions modal-buttons">
+                <a href="#" class="modal-button--shopping-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <a href="#" class="modal-button--favorite">
+                    <i class="fas fa-heart"></i>
+                </a>
+            </div>
+    
+            <div class="sign-up">
+                <a href="sign-in.html">
+                    <i class="fas fa-sign-in-alt"></i>
+                </a>
+            </div>
+        </nav>
+    
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
         </div>
-
-        <div class="actions">
-            <a href="#">
-                <i class="fas fa-shopping-cart"></i>
-            </a>
-            <a href="#">
-                <i class="fas fa-heart"></i>
-            </a>
-        </div>
-
-        <div class="sign-up">
-            <a href="sign-in.html">
-                <i class="fas fa-sign-in-alt"></i>
-            </a>
-        </div>
+    
     </header>
+    
+    <div id="dropdown-overlay"></div>
 
     <main>
 
@@ -65,8 +126,8 @@
                 </div>
                 <div class="product__info">
                     <h2>$60</h2>
-                    <button class="bg-blue">Add to cart</button>
-                    <button class="bg-red">Buy now</button>
+                    <button class="btn-blue">Add to cart</button>
+                    <button class="btn-red">Buy now</button>
                     <h3 class="from-seller">From seller: GameHub</h3>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
                     magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
@@ -88,7 +149,7 @@
 
             <div class="grid-header">
                 <h2 class="trending__title">Similar Products</h2>
-                <a class="small-button" href="#0">Discover all</a>
+                <a class="btn-blue--sm" href="#0">Discover all</a>
             </div>
 
             <div class="grid-body">
@@ -296,9 +357,124 @@
 
     </main>
 
-    <footer>
-        Copyright &copy;
+    <footer class="footer">
+        <div class="footer__container">
+            <ul class="footer__social">
+                <li>
+                    <a href="#0" class="facebook"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#0" class="twitter"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#0" class="youtube"><i class="fab fa-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__container flex">
+            <div class="footer__information">
+                <ul class="footer__information--gamehub">
+                    <li>GameHub</li>
+                    <li><a href="#0">News</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="footer__information--support">
+                    <li>Support</li>
+                    <li><a href="#0">FAQ</a></li>
+                    <li><a href="about.html">Returns & Refunds</a></li>
+                    <li><a href="contact.html">Support Hub</a></li>
+                </ul>
+                <ul class="footer__information--shortcuts">
+                    <li>Shortcuts</li>
+                    <li><a href="account.html">My account</a></li>
+                    <li><a href="#0">Redeem code</a></li>
+                    <li><a href="#0">Sell game</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__container">
+            <div class="footer__legal">
+                <a href="#0">Legal</a>
+                <a href="#0">Privacy Policy</a>
+                <a href="#0">Terms & Service</a>
+            </div>
+            <div class="footer__copyright">
+                &copy; Kasper Bø Bjørnø. All rights reserved. All trademarks and registered trademarks are the property of
+                their respective owners.
+            </div>
+        </div>
     </footer>
+    
+    <div class="modal modal--shopping-cart">
+        <div class="modal__card">
+            <span class="modal__close">&times;</span>
+            <div class="modal__header">
+                <i class="fas fa-shopping-cart"></i>
+                <h1 class="modal__title">Shopping Cart</h1>
+            </div>
+            <div class="modal__body">
+    
+                <div class="product-card--horizontal">
+                    <img src="images/game-covers/assassins_creed_odyssey.png" alt="Assassin's Creed Odyssey">
+                    <div class="product-card--horizontal__content">
+                        <div class="product-card--horizontal__title">
+                            <a href="product.html">Assassin's Creed Odyssey</a>
+                            <p>PS4</p>
+                        </div>
+                        <div class="product-card--horizontal__body">
+                            <div class="product-card--horizontal__actions">
+                                <a href="">remove from cart</a>
+                            </div>
+                            <div class="product-card--horizontal__price">
+                                $60
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="modal__buttons">
+    
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal modal--favorite">
+        <div class="modal__card">
+            <span class="modal__close">&times;</span>
+            <div class="modal__header">
+                <i class="fas fa-heart"></i>
+                <h1 class="modal__title">Favorites</h1>
+            </div>
+            <div class="modal__body">
+    
+                <div class="product-card--horizontal">
+                    <img src="images/game-covers/assassins_creed_odyssey.png" alt="Assassin's Creed Odyssey">
+                    <div class="product-card--horizontal__content">
+                        <div class="product-card--horizontal__title">
+                            <a href="product.html">Assassin's Creed Odyssey</a>
+                            <p>PS4</p>
+                        </div>
+                        <div class="product-card--horizontal__body">
+                            <div class="product-card--horizontal__actions">
+                                <a href="">remove from cart</a>
+                            </div>
+                            <div class="product-card--horizontal__price">
+                                $60
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="modal__buttons">
+    
+                </div>
+    
+            </div>
+        </div>
+    </div>
 
 </body>
 

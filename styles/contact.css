@@ -1,12 +1,15 @@
 :root {
-	--primary-color: #1b203d;
-	--secondary-color: #2699fb;
-	--warn-color: #fa4b3d;
-	--success-color: #34b138;
+	--primary: #1b203d;
+	--secondary: #2699fb;
+	--warn: #fa4b3d;
+	--success: #34b138;
 	--light-gray: #e0e0e0;
+	--lighter-gray: #eeeeee;
 	--dark-gray: #707070;
+	--darker-gray: #262626;
 	--white: #ffffff;
 	--black: #000000;
+	--border-radius: 4px;
 }
 
 html {
@@ -31,19 +34,24 @@ body {
 
 main {
 	padding-top: 84px;
-	margin: 0 8rem;
+}
+
+main h1 {
+	margin-left: 5%;
+	color: var(--primary);
 }
 
 /* Sections
 -------------------------------*/
 .sections-container {
 	display: grid;
-	grid-template-columns: 2fr 3fr;
+	grid-template-columns: 1fr;
 	gap: 3rem 2rem;
+	margin: 0 5%;
 }
 
 section {
-	padding: 3rem;
+	padding: 2rem;
 	width: 100%;
 	background-color: var(--white);
 	border-radius: 4px;
@@ -54,7 +62,7 @@ section {
 
 section h2 {
 	margin: 0 0 1rem 0;
-	color: var(--primary-color);
+	color: var(--primary);
 }
 
 /* Contact Information
@@ -65,7 +73,7 @@ section.contact-information {
 	justify-content: space-between;
 	text-align: center;
 	height: 100%;
-	color: var(--primary-color);
+	color: var(--primary);
 }
 
 section.contact-information .email,
@@ -77,28 +85,28 @@ section.contact-information .social-media__icons {
 }
 
 section.contact-information .social-media i {
-	color: var(--secondary-color);
+	color: var(--secondary);
 	font-size: 2rem;
 	margin: 0 0.5rem;
 }
 
 section.contact-information .social-links a {
-	color: var(--secondary-color);
-	margin: 0 1rem;
+	display: block;
+	color: var(--secondary);
+	margin: 1rem;
 }
 
 /* Form
 -------------------------------*/
-form {
+section.contact-form form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 100%;
 }
 
 .submit button {
-	background-color: var(--secondary-color);
-	border: 2px solid var(--secondary-color);
+	background-color: var(--secondary);
+	border: 2px solid var(--secondary);
 	margin: 1rem 0 1rem 0;
 	border-radius: 4px;
 	color: white;
@@ -113,7 +121,7 @@ form {
 .submit button:hover {
 	cursor: pointer;
 	background-color: transparent;
-	color: var(--secondary-color);
+	color: var(--secondary);
 }
 
 input[type=text],
@@ -136,4 +144,21 @@ select {
 fieldset {
 	border: 0;
 	width: 100%;
+}
+
+/* Media Queries
+-------------------------------*/
+@media only screen and (min-width: 1024px) {
+	/* Sections
+	-------------------------------*/
+	.sections-container {
+		grid-template-columns: 2fr 3fr;
+	}
+
+	/* Social Links
+	-------------------------------*/
+	section.contact-information .social-links {
+		display: flex;
+		justify-content: space-evenly;
+	}
 }

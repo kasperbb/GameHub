@@ -22,6 +22,12 @@ const navDropdown = () => {
 		} else {
 			DOM.overlay.classList.add('active');
 		}
+
+		if (DOM.dropdownButton.classList.contains('active')) {
+			DOM.dropdownButton.classList.remove('active');
+		} else {
+			DOM.dropdownButton.classList.add('active');
+		}
 	};
 
 	DOM.dropdownButton.addEventListener('click', event => {

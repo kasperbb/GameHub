@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameHub</title>
+    
+    <!-- Style Components-->
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/product-card.css">
     <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/product-card.css">
+    <link rel="stylesheet" href="styles/global.css">
+
+    <!-- File specific styles -->
     <link rel="stylesheet" href="styles/contact.css">
-    <link rel="stylesheet" href="styles/utilities.css">
 
     <!-- Fonts -->
     <link
@@ -21,8 +25,11 @@
         rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/2540fdf7f0.js" crossorigin="anonymous"></script>
+
+    <!-- Javascript Components -->
     <script src="js/modal.js"></script>
     <script src="js/dropdown.js"></script>
+    <script src="js/header.js"></script>
 </head>
 
 <body>
@@ -34,15 +41,15 @@
                     width="100" alt="Logo">
             </a>
         </div>
-
+    
         <nav id="nav" role="navigation">
             <div class="dropdown-button">
-                <button>
+                <button class="btn-clear">
                     Store
                     <i class="fas fa-angle-down"></i>
                 </button>
             </div>
-
+    
             <div class="dropdown hidden">
                 <div class="dropdown__section">
                     <h3 class="dropdown__header">Games</h3>
@@ -75,14 +82,14 @@
                     </div>
                 </div>
             </div>
-
+    
             <div class="search">
                 <form>
                     <input type="text" name="search" id="search">
                     <button type="submit"><i class="fas fa-search"></i></button>
                 </form>
             </div>
-
+    
             <div class="actions modal-buttons">
                 <a href="#" class="modal-button--shopping-cart">
                     <i class="fas fa-shopping-cart"></i>
@@ -91,20 +98,19 @@
                     <i class="fas fa-heart"></i>
                 </a>
             </div>
-
+    
             <div class="sign-up">
                 <a href="sign-in.html">
                     <i class="fas fa-sign-in-alt"></i>
                 </a>
             </div>
         </nav>
-
+    
         <div class="hamburger" id="hamburger">
             <i class="fas fa-bars"></i>
         </div>
-
     </header>
-
+    
     <div id="dropdown-overlay"></div>
 
     <main>
