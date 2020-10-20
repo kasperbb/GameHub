@@ -52,6 +52,18 @@ footer .footer__social a {
 	color: var(--white);
 }
 
+footer .footer__social li a.facebook:hover {
+	color: #4267b2;
+}
+
+footer .footer__social li a.twitter:hover {
+	color: #1da1f2;
+}
+
+footer .footer__social li a.youtube:hover {
+	color: #ff0000;
+}
+
 /* Footer Information
 -------------------------------*/
 footer .footer__information {
