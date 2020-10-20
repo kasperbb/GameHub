@@ -107,7 +107,7 @@ header .search form {
 
 header .search input[type=text] {
 	padding: 1rem 1rem;
-	border: 3px solid var(--primary);
+	border: 2px solid var(--primary);
 	border-radius: 4px 0px 0px 4px;
 }
 
@@ -117,7 +117,7 @@ header .search button {
 	background-color: var(--primary);
 	padding: .7rem 1rem;
 	margin-left: -10px;
-	border: 3px solid var(--primary);
+	border: 2px solid var(--primary);
 	border-radius: 0px 4px 4px 0px;
 }
 
