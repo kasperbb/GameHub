@@ -80,6 +80,10 @@ footer .footer__information a {
 	color: var(--light-gray);
 }
 
+footer .footer__information a:hover {
+	color: var(--white);
+}
+
 /* Footer Legal
 -------------------------------*/
 footer .footer__legal {
