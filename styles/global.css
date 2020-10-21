@@ -30,6 +30,19 @@
 	transition: 0.3s;
 }
 
+.btn-blue--outline {
+	font-family: 'Roboto';
+	font-size: 21px;
+	text-align: center;
+	padding: 1rem 2rem;
+	text-decoration: none;
+	color: var(--secondary);
+	background-color: transparent;
+	border: 2px solid var(--secondary);
+	border-radius: var(--border-radius);
+	transition: 0.3s;
+}
+
 .btn-clear {
 	font-family: 'Roboto';
 	font-size: 17px;

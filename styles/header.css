@@ -103,6 +103,7 @@ header .search {
 
 header .search form {
 	display: flex;
+	flex-direction: row;
 }
 
 header .search input[type=text] {

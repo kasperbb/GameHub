@@ -3,6 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="author" content="Kasper Bø Bjørnø">
+        <meta name="description"
+            content="GameHub is a competitively priced website with a huge range of games. 
+                     GamHub is also a used games marketplace where you can sell or purchase used games.">
+
         <title>GameHub</title>
 
         <!-- Fonts -->
@@ -22,13 +28,6 @@
         
         <!-- File specific styles -->
         <link rel="stylesheet" href="styles/index.css">
-
-        <script src="https://kit.fontawesome.com/2540fdf7f0.js" crossorigin="anonymous"></script>
-
-        <!-- Javascript Components -->
-        <script src="js/modal.js"></script>
-        <script src="js/dropdown.js"></script>
-        <script src="js/header.js"></script>
     </head>
     <body>
 
@@ -38,7 +37,6 @@
                     <img src="https://raw.githubusercontent.com/NoroffFEU/first-year-cross-course-assignment-brief-three/master/GameHub_Logo.png" width="100" alt="Logo">
                 </a>
             </div>
-
             <nav id="nav" role="navigation">
                 <div class="dropdown-button">
                     <button class="btn-clear">
@@ -46,7 +44,7 @@
                         <i class="fas fa-angle-down"></i>
                     </button>
                 </div>
-                
+
                 <div class="dropdown hidden">
                     <div class="dropdown__section">
                         <h3 class="dropdown__header">Games</h3>
@@ -111,7 +109,8 @@
         <div id="dropdown-overlay"></div>
         
         <main>
-
+            <!-- Hero
+            ------------------------------>
             <section class="hero">
                 <div class="call-to-action">
                     <h1>The universe of games</h1>
@@ -123,6 +122,8 @@
                 </div>                
             </section>
 
+            <!-- Categories
+            ------------------------------>
             <section class="categories">
                 <div class="categories__header">
                     <h2>Categories</h2>
@@ -150,14 +151,12 @@
             <!-- Trending
             ------------------------------>
             <section class="trending">
-
                 <div class="grid-header">
                     <h2 class="trending__title">Trending</h2>
                     <a class="btn-blue--sm" href="product-grid.html">Discover all</a>
                 </div>                
 
                 <div class="grid-body">
-
                     <div class="product-card">
                         <img src="images/game-covers/destiny_2.jpg" alt="Destiny 2">
                         <div class="product-card__title">
@@ -262,24 +261,18 @@
                             </div>
                         </div>
                     </div>                    
-
                 </div>
-
             </section>
-            <!-- / Trending
-            ------------------------------>
 
             <!-- Bestsellers
             ------------------------------>
             <section class="bestsellers">
-            
                 <div class="grid-header">
                     <h2 class="bestsellers__title">Bestsellers</h2>
                     <a class="btn-blue--sm" href="product-grid.html">Discover all</a>
                 </div>
             
                 <div class="grid-body">
-            
                     <div class="product-card">
                         <img src="images/game-covers/destiny_2.jpg" alt="Destiny 2">
                         <div class="product-card__title">
@@ -491,24 +484,18 @@
                             </div>
                         </div>
                     </div>
-            
                 </div>
-            
             </section>
-            <!-- / Bestsellers
-            ------------------------------>
 
             <!-- Pre-Order
             ------------------------------>
             <section class="pre-order">
-            
                 <div class="grid-header">
                     <h2 class="trending__title">Pre-Order</h2>
                     <a class="btn-blue--sm" href="product-grid.html">Discover all</a>
                 </div>
             
                 <div class="grid-body">
-            
                     <div class="product-card">
                         <img src="images/game-covers/destiny_2.jpg" alt="Destiny 2">
                         <div class="product-card__title">
@@ -615,11 +602,7 @@
                     </div>
             
                 </div>
-            
             </section>
-            <!-- / Pre-Order
-            ------------------------------>
-
         </main>
 
         <footer class="footer">
@@ -678,7 +661,6 @@
                     <h1 class="modal__title">Shopping Cart</h1>                    
                 </div>
                 <div class="modal__body">
-
                     <div class="product-card--horizontal">
                         <img src="images/game-covers/assassins_creed_odyssey.png" alt="Assassin's Creed Odyssey">
                         <div class="product-card--horizontal__content">
@@ -698,9 +680,9 @@
                     </div>
                     
                     <div class="modal__buttons">
-
+                        <a href="#0" class="modal__button btn-blue--outline">Back to shopping</a>
+                        <a href="#0" class="modal__button btn-red">Proceed to checkout</a>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -713,7 +695,6 @@
                     <h1 class="modal__title">Favorites</h1>
                 </div>
                 <div class="modal__body">
-        
                     <div class="product-card--horizontal">
                         <img src="images/game-covers/assassins_creed_odyssey.png" alt="Assassin's Creed Odyssey">
                         <div class="product-card--horizontal__content">
@@ -735,10 +716,16 @@
                     <div class="modal__buttons">
         
                     </div>
-        
                 </div>
             </div>
         </div>
 
+        <!-- Fontawesome -->
+        <script src="https://kit.fontawesome.com/2540fdf7f0.js" crossorigin="anonymous"></script>
+        
+        <!-- Javascript Components -->
+        <script src="js/modal.js"></script>
+        <script src="js/dropdown.js"></script>
+        <script src="js/header.js"></script>
     </body>
 </html>

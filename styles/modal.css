@@ -49,6 +49,24 @@
 	margin-bottom: 5%;
 }
 
+.modal__buttons {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0 5%;
+}
+
+.modal__button {
+	width: 100%;
+}
+
+.modal__button.btn-blue--outline {
+	margin-right: 0.5rem;
+}
+.modal__button.btn-red {
+	margin-left: 0.5rem;
+}
+
 .modal__close {
 	color: #aaa;
 	position: relative;

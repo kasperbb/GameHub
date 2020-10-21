@@ -3,13 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>GameHub</title>
-        <link rel="stylesheet" href="styles/header.css">
-        <link rel="stylesheet" href="styles/footer.css">
-        <link rel="stylesheet" href="styles/product-card.css">
-        <link rel="stylesheet" href="styles/modal.css">
-        <link rel="stylesheet" href="styles/account.css">
-        <link rel="stylesheet" href="styles/utilities.css">
+
+        <meta name="author" content="Kasper Bø Bjørnø">
+        <meta name="description"
+            content="Account page for users of GameHub.">
+
+        <title>My Account - GameHub</title>
 
         <!-- Fonts -->
         <link
@@ -19,9 +18,16 @@
             href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap"
             rel="stylesheet">
 
-        <script src="https://kit.fontawesome.com/2540fdf7f0.js" crossorigin="anonymous"></script>
-        <script src="js/modal.js"></script>
-        <script src="js/account.js"></script>
+
+        <!-- Style Components-->
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/footer.css">
+        <link rel="stylesheet" href="styles/modal.css">
+        <link rel="stylesheet" href="styles/product-card.css">
+        <link rel="stylesheet" href="styles/global.css">
+
+        <!-- File specific styles -->
+        <link rel="stylesheet" href="styles/account.css">
     </head>
     <body>
 
@@ -32,10 +38,9 @@
                         width="100" alt="Logo">
                 </a>
             </div>
-        
             <nav id="nav" role="navigation">
                 <div class="dropdown-button">
-                    <button>
+                    <button class="btn-clear">
                         Store
                         <i class="fas fa-angle-down"></i>
                     </button>
@@ -100,13 +105,11 @@
             <div class="hamburger" id="hamburger">
                 <i class="fas fa-bars"></i>
             </div>
-        
         </header>
-
+        
         <div id="dropdown-overlay"></div>
         
         <main>
-            
             <h1>My account</h1>
 
             <div class="sections-container">
@@ -200,7 +203,6 @@
                             </div>
                         </div>
                     </div>
-
                 </section>
                 
                 <section class="balance">
@@ -231,7 +233,6 @@
                     <h2>My games for sale</h2>
                 </section>
             </div>
-
         </main>
 
         <footer class="footer">
@@ -248,7 +249,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer__container">
+            <div class="footer__container flex">
                 <div class="footer__information">
                     <ul class="footer__information--gamehub">
                         <li>GameHub</li>
@@ -313,7 +314,6 @@
                     <div class="modal__buttons">
 
                     </div>
-
                 </div>
             </div>
         </div>
@@ -348,10 +348,16 @@
                     <div class="modal__buttons">
         
                     </div>
-        
                 </div>
             </div>
         </div>
 
+        <!-- Fontawesome -->
+        <script src="https://kit.fontawesome.com/2540fdf7f0.js" crossorigin="anonymous"></script>
+        
+        <!-- Javascript Components -->
+        <script src="js/modal.js"></script>
+        <script src="js/dropdown.js"></script>
+        <script src="js/header.js"></script>
     </body>
 </html>
