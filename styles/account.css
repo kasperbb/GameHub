@@ -115,7 +115,7 @@ section h2 {
 /* My Orders
 -------------------------------*/
 section.my-orders {
-	max-height: 622px;
+	max-height: 639px;
 	overflow: auto;
 }
 
@@ -200,6 +200,7 @@ section.games-for-sale .order {
 .order .product-card--horizontal__price a {
 	font-size: 1rem;
 	color: var(--secondary);
+	margin-top: 1rem;
 }
 
 .order .product-card--horizontal__status {
@@ -212,14 +213,16 @@ section.games-for-sale .order {
 	color: var(--primary);
 }
 
-.order .product-card--horizontal__status.warn i {
+.order .product-card--horizontal__status i {
 	margin-bottom: 1rem;
+}
+
+.order .product-card--horizontal__status.warn i {
 	color: var(--warn);
 	font-size: 2rem;
 }
 
 .order .product-card--horizontal__status.success i {
-	margin-bottom: 1rem;
 	color: var(--success);
 	font-size: 2rem;
 }
@@ -318,13 +321,11 @@ section.balance button i {
 	}
 
 	.order .product-card--horizontal__status.warn i {
-		margin-bottom: 1rem;
 		color: var(--warn);
 		font-size: 2rem;
 	}
 
 	.order .product-card--horizontal__status.success i {
-		margin-bottom: 1rem;
 		color: var(--success);
 		font-size: 2rem;
 	}

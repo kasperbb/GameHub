@@ -11,7 +11,7 @@ const addBalance = () => {
 	DOM.dollars.forEach(elem => {
 		elem.addEventListener('click', event => {
 			let currentValue = parseInt(DOM.currentBalance.innerHTML);
-			currentValue += parseInt(elem.classList[1]);
+			currentValue += parseInt(Array.from(elem.classList).find(el => !isNaN(el)));
 			DOM.currentBalance.innerHTML = currentValue;
 		});
 	});
