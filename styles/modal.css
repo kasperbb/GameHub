@@ -52,19 +52,24 @@
 .modal__buttons {
 	width: 100%;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	padding: 0 5%;
 }
 
 .modal__button {
 	width: 100%;
+	margin-bottom: 1rem;
 }
 
-.modal__button.btn-blue--outline {
-	margin-right: 0.5rem;
+.modal__button.btn-blue--outline:hover {
+	background-color: var(--secondary);
+	color: var(--white);
 }
-.modal__button.btn-red {
-	margin-left: 0.5rem;
+
+.modal__button.btn-red:hover {
+	background-color: transparent;
+	color: var(--warn);
 }
 
 .modal__close {
@@ -77,4 +82,22 @@
 
 .modal__close:hover {
 	cursor: pointer;
+}
+
+/* Media Queries
+-------------------------------*/
+@media only screen and (min-width: 1024px) {
+	/* Main Margin
+	-----------------------*/
+	.modal__buttons {
+		flex-direction: row;
+	}
+
+	.modal__button.btn-blue--outline {
+		margin-right: 0.5rem;
+	}
+
+	.modal__button.btn-red {
+		margin-left: 0.5rem;
+	}
 }
