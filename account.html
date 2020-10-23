@@ -6,7 +6,7 @@
 
         <meta name="author" content="Kasper Bø Bjørnø">
         <meta name="description"
-            content="Account page for users of GameHub.">
+            content="Change account details. View your orders. Add a balance to your account. Sell your used games.">
 
         <title>My Account - GameHub</title>
 
@@ -151,11 +151,13 @@
                                     <p>PS4</p>
                                 </div>
                                 <div class="product-card--horizontal__body">
-                                    <div class="product-card--horizontal__actions">
-                                        <a href="">remove from cart</a>
-                                    </div>
                                     <div class="product-card--horizontal__price">
                                         $60
+                                        <a href="#0">view order</a>
+                                    </div>
+                                    <div class="product-card--horizontal__status warn">
+                                        <i class="far fa-times-circle"></i>
+                                        Not delivered
                                     </div>
                                 </div>
                             </div>
@@ -172,11 +174,13 @@
                                     <p>PS4</p>
                                 </div>
                                 <div class="product-card--horizontal__body">
-                                    <div class="product-card--horizontal__actions">
-                                        <a href="">remove from cart</a>
-                                    </div>
                                     <div class="product-card--horizontal__price">
                                         $60
+                                        <a href="#0">view order</a>
+                                    </div>
+                                    <div class="product-card--horizontal__status success">
+                                        <i class="far fa-check-circle"></i>
+                                        Delivered
                                     </div>
                                 </div>
                             </div>
@@ -193,11 +197,13 @@
                                     <p>PS4</p>
                                 </div>
                                 <div class="product-card--horizontal__body">
-                                    <div class="product-card--horizontal__actions">
-                                        <a href="">remove from cart</a>
-                                    </div>
                                     <div class="product-card--horizontal__price">
                                         $60
+                                        <a href="#0">view order</a>
+                                    </div>
+                                    <div class="product-card--horizontal__status success">
+                                        <i class="far fa-check-circle"></i>
+                                        Delivered
                                     </div>
                                 </div>
                             </div>
@@ -207,30 +213,106 @@
                 
                 <section class="balance">
                     <h2>Balance</h2>
-                    <button id="dollars150">
-                        <i class="fas fa-dollar-sign"></i>
-                        Add $150 to balance
-                    </button>
+                    <div class="add-balance-buttons">
+                        <button class="dollar 250">
+                            <i class="fas fa-dollar-sign"></i>
+                            Add $250 to balance
+                        </button>
+                        
+                        <button class="dollar 100">
+                            <i class="fas fa-dollar-sign"></i>
+                            Add $100 to balance
+                        </button>
+                        
+                        <button class="dollar 50">
+                            <i class="fas fa-dollar-sign"></i>
+                            Add $50 to balance
+                        </button>
+                        
+                        <button class="dollar 25">
+                            <i class="fas fa-dollar-sign"></i>
+                            Add $25 to balance
+                        </button>
 
-                    <button id="dollars100">
-                        <i class="fas fa-dollar-sign"></i>
-                        Add $100 to balance
-                    </button>
-
-                    <button id="dollars50">
-                        <i class="fas fa-dollar-sign"></i>
-                        Add $50 to balance
-                    </button>
-
-                    <button id="dollars25">
-                        <i class="fas fa-dollar-sign"></i>
-                        Add $25 to balance
-                    </button>
+                        <button class="dollar 5">
+                            <i class="fas fa-dollar-sign"></i>
+                            Add $5 to balance
+                        </button>
+                    </div>
                     <h3>Current balance: $<span id="currentBalance">50</span></h3>
                 </section>
                 
                 <section class="games-for-sale">
                     <h2>My games for sale</h2>
+
+                    <div class="order">
+                        <h3>Game number: #18640</h3>
+                        <div class="product-card--horizontal">
+                            <img src="images/game-covers/assassins_creed_odyssey.png" alt="Assassin's Creed Odyssey">
+                            <div class="product-card--horizontal__content">
+                                <div class="product-card--horizontal__title">
+                                    <a href="product.html">Assassin's Creed Odyssey</a>
+                                    <p>PS4</p>
+                                </div>
+                                <div class="product-card--horizontal__body">
+                                    <div class="product-card--horizontal__price">
+                                        $60
+                                        <a href="#0">view order</a>
+                                    </div>
+                                    <div class="product-card--horizontal__status warn">
+                                        <i class="far fa-times-circle"></i>
+                                        Not delivered
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="order">
+                        <h3>Game number: #18725</h3>
+                        <div class="product-card--horizontal">
+                            <img src="images/game-covers/call_of_duty_infinite_warfare.jpg" alt="Call of Duty: Infinite Warfare">
+                            <div class="product-card--horizontal__content">
+                                <div class="product-card--horizontal__title">
+                                    <a href="product.html">Call of Duty: Infinite Warfare</a>
+                                    <p>PS4</p>
+                                </div>
+                                <div class="product-card--horizontal__body">
+                                    <div class="product-card--horizontal__price">
+                                        $60
+                                        <a href="#0">view order</a>
+                                    </div>
+                                    <div class="product-card--horizontal__status success">
+                                        <i class="far fa-check-circle"></i>
+                                        Delivered
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="order">
+                        <h3>Game number: #18799</h3>
+                        <div class="product-card--horizontal">
+                            <img src="images/game-covers/cyberpunk_2077.jpg" alt="Cyberpunk 2077">
+                            <div class="product-card--horizontal__content">
+                                <div class="product-card--horizontal__title">
+                                    <a href="product.html">Cyberpunk 2077</a>
+                                    <p>PS4</p>
+                                </div>
+                                <div class="product-card--horizontal__body">
+                                    <div class="product-card--horizontal__price">
+                                        $60
+                                        <a href="#0">view order</a>
+                                    </div>
+                                    <div class="product-card--horizontal__status success">
+                                        <i class="far fa-check-circle"></i>
+                                        Delivered
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
         </main>
@@ -359,5 +441,6 @@
         <script src="js/modal.js"></script>
         <script src="js/dropdown.js"></script>
         <script src="js/header.js"></script>
+        <script src="js/account.js"></script>
     </body>
 </html>
