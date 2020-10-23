@@ -119,7 +119,7 @@ header .search button {
 	margin-left: -10px;
 	border: 2px solid var(--primary);
 	border-radius: 0px 4px 4px 0px;
-	min-height: 50px;
+	height: 52px;
 }
 
 /* Shopping Cart & Favorites
