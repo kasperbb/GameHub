@@ -115,7 +115,7 @@ section h2 {
 /* My Orders
 -------------------------------*/
 section.my-orders {
-	height: 622px;
+	max-height: 622px;
 	overflow: auto;
 }
 
@@ -138,7 +138,7 @@ section.my-orders .order {
 /* Games for sale
 -------------------------------*/
 section.games-for-sale {
-	height: 622px;
+	height: 693px;
 	overflow: auto;
 }
 
