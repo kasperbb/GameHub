@@ -14,6 +14,5 @@ const hamburgerClicked = () => {
 		} else {
 			DOM.nav.classList.remove('show');
 		}
-		console.log('test');
 	});
 };
