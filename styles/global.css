@@ -9,14 +9,8 @@
 	color: var(--white);
 	background-color: var(--warn);
 	border: 2px solid var(--warn);
-	border-radius: var(--border-radius);
+	cursor: pointer;
 	transition: 0.3s;
-}
-
-.btn-shadow:hover {
-	-webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
-	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .btn-blue {
@@ -28,7 +22,7 @@
 	color: var(--white);
 	background-color: var(--secondary);
 	border: 2px solid var(--secondary);
-	border-radius: var(--border-radius);
+	cursor: pointer;
 	transition: 0.3s;
 }
 
@@ -41,7 +35,7 @@
 	color: var(--secondary);
 	background-color: transparent;
 	border: 2px solid var(--secondary);
-	border-radius: var(--border-radius);
+	cursor: pointer;
 	transition: 0.3s;
 }
 
@@ -54,6 +48,8 @@
 	color: var(--primary);
 	border: none;
 	background-color: transparent;
+	cursor: pointer;
+	transition: 0.3s;
 }
 
 .btn-blue--sm {
@@ -66,11 +62,30 @@
 	color: var(--white);
 	background-color: var(--secondary);
 	border: 2px solid var(--secondary);
-	border-radius: var(--border-radius);
+	cursor: pointer;
+	transition: 0.3s;
 }
 
 .btn-blue--sm:hover {
 	border: 2px solid var(--secondary);
 	background-color: transparent;
 	color: var(--secondary);
+}
+
+.btn-shadow-hover:hover {
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.btn-blue-hover:hover {
+	background: transparent;
+	border: 2px solid var(--secondary);
+	color: var(--secondary);
+}
+
+.btn-red-hover:hover {
+	background: transparent;
+	border: 2px solid var(--warn);
+	color: var(--warn);
 }

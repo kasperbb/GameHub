@@ -3,36 +3,60 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sign In | GameHub</title>
+
+        <meta name="author" content="Kasper Bø Bjørnø">
+        <meta name="description" content="Sign in to Gamehub to get access to hundreds of games.">
+        
+        <title>Sign In - GameHub</title>
+
+        <!-- File specific styles -->
         <link rel="stylesheet" href="styles/sign-in.css">
-        <script src="https://kit.fontawesome.com/2540fdf7f0.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <header>
+            <div class="back">
+                <a href="javascript:history.back()">
+                    <i class="fas fa-angle-left"></i> Back
+                </a>
+            </div>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://raw.githubusercontent.com/NoroffFEU/first-year-cross-course-assignment-brief-three/master/GameHub_Logo.png"
+                        width="100" alt="Logo">
+                </a>
+            </div>
+        </header>
+        
         <main>
             <div class="card">
                 <h1>Sign In</h1>
                 <form action="submit.php" method="GET">
-                    <fieldset class="email">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" placeholder="example@gmail.com">
-                    </fieldset>
-                    <fieldset class="password">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" placeholder="Password">
-                    </fieldset>
-                    <fieldset class="remember">
-                        <input type="checkbox" name="remember">
-                        <p>Remember me</p>
-                    </fieldset>
-                    <fieldset class="submit">
-                        <button>Sign in</button>
-                        <div class="submit__message">
-                            <p>Don't have an account?</p>
-                            <a href="sign-up.html">Sign up</a>
-                        </div>
-                    </fieldset>
+                    <fieldset>
+                        <p class="email">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="example@gmail.com">
+                        </p>
+                        <p class="password">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" placeholder="Password">
+                        </p>
+                        <p class="remember">
+                            <input type="checkbox" name="remember">
+                            <label for="remember">Remember me</label>
+                        </p>
+                        <p class="submit">
+                            <button>Sign in</button>
+                            <div class="submit__message">
+                                <p>Don't have an account?</p>
+                                <a href="sign-up.html">Sign up</a>
+                            </div>
+                        </p>
+                    </fieldset>                    
                 </form>
             </div>
         </main>
+
+        <!-- Fontawesome -->
+        <script src="https://kit.fontawesome.com/2540fdf7f0.js" crossorigin="anonymous"></script>
     </body>
 </html>

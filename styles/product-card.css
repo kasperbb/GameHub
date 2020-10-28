@@ -7,6 +7,7 @@
 	color: black;
 	border: 1px solid #e0e0e0;
 	width: 100%;
+	font-family: 'Open Sans';
 }
 
 .product-card:hover {
@@ -46,7 +47,7 @@
 	margin: 0 1rem 0 1rem;
 	text-decoration: none;
 	color: black;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 .product-card__body {
@@ -109,8 +110,8 @@
 	background-color: white;
 	color: black;
 	border: 1px solid #e0e0e0;
-	border-radius: 4px;
 	margin: 25px 5% 25px 5%;
+	font-family: 'Open Sans';
 }
 
 .product-card--horizontal img {
@@ -140,7 +141,7 @@
 .product-card--horizontal__title a {
 	text-decoration: none;
 	color: black;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 .product-card--horizontal__title p {
@@ -156,12 +157,16 @@
 }
 
 .product-card--horizontal__actions a {
+	color: var(--secondary);
+	margin-right: 1rem;
+}
+.product-card--horizontal__actions a:first-of-type {
 	color: var(--warn);
 }
 
 .product-card--horizontal__price {
 	color: var(--secondary);
-	font-weight: 600;
+	font-weight: 800;
 	font-size: 28px;
 }
 

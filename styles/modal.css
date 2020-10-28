@@ -59,17 +59,18 @@
 
 .modal__button {
 	width: 100%;
-	margin-bottom: 1rem;
 }
 
-.modal__button.btn-blue--outline:hover {
-	background-color: var(--secondary);
-	color: var(--white);
+.modal__button.btn-blue:hover {
+	background-color: transparent;
+	color: var(--secondary);
+	cursor: pointer;
 }
 
 .modal__button.btn-red:hover {
 	background-color: transparent;
 	color: var(--warn);
+	cursor: pointer;
 }
 
 .modal__close {

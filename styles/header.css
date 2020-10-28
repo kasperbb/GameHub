@@ -72,6 +72,9 @@ header nav .dropdown.hidden {
 
 /* Logo
 -------------------------------*/
+header .logo img {
+	width: 100px;
+}
 
 /* Hamburger Icon
 -------------------------------*/
@@ -84,6 +87,9 @@ header .hamburger:hover {
 
 /* Navigation
 -------------------------------*/
+nav {
+	max-height: 100vh;
+}
 
 /* Dropdown
 -------------------------------*/
@@ -93,10 +99,6 @@ nav .dropdown-button button i {
 nav .dropdown-button.active button i {
 	transform: rotate(180deg);
 	transition: transform 0.5s;
-}
-
-nav {
-	max-height: 100vh;
 }
 
 nav .dropdown {
@@ -138,7 +140,6 @@ header .search form {
 header .search input[type=text] {
 	padding: 1rem 1rem;
 	border: 2px solid var(--primary);
-	border-radius: 4px 0px 0px 4px;
 }
 
 header .search button {
@@ -148,7 +149,6 @@ header .search button {
 	padding: .7rem 1rem;
 	margin-left: -10px;
 	border: 2px solid var(--primary);
-	border-radius: 0px 4px 4px 0px;
 	height: 52px;
 }
 
@@ -280,9 +280,9 @@ header .sign-up a:hover {
 
 	header .dropdown .dropdown__body > .dropdown__item {
 		padding: 0.7rem;
-		margin-left: -0.7rem;
 		border: none;
 		margin: 0;
+		margin-left: -0.7rem;
 	}
 
 	header .dropdown .dropdown__body > .dropdown__item:hover {

@@ -8,7 +8,7 @@ const shoppingCartModal = () => {
 		modal                   : document.querySelector('.modal--shopping-cart'),
 		modalButtonShoppingCart : document.querySelectorAll('.modal-button--shopping-cart'),
 		modalShoppingCart       : document.querySelector('.modal--shopping-cart'),
-		modalClose              : document.querySelector('modal__close'),
+		modalClose              : document.querySelector('.modal__close'),
 	};
 
 	// Set active panel class
@@ -30,7 +30,7 @@ const shoppingCartModal = () => {
 		const closeClass = 'modal__close';
 
 		// Check if we click on a nav item
-		if (event.target.classList.contains(closeClass)) {
+		if (event.target.classList.contains(closeClass) || event.target.classList.contains('back')) {
 			// Set active panel
 			setInactiveShoppingCartModal();
 		}
@@ -71,7 +71,7 @@ const favoriteModal = () => {
 		const closeClass = 'modal__close';
 
 		// Check if we click on a nav item
-		if (event.target.classList.contains(closeClass)) {
+		if (event.target.classList.contains(closeClass) || event.target.classList.contains('back')) {
 			// Set active panel
 			setInactiveFavoriteModal();
 		}
