@@ -32,23 +32,23 @@ GameHub allows you to pre-order games, get your latest games here first.
 
 ### Checklist
 
-[x] Home Page
-[x] Search Page
-[x] Game page
-[x] Create Account Page
-[x] Account Page
-[x] Contact
+- [x] Home Page
+- [x] Search Page
+- [x] Game page
+- [x] Create Account Page
+- [x] Account Page
+- [x] Contact
 
-[x] Checkout Page
-[x] Sell Page
+- [x] Checkout Page
+- [x] Sell Page
 
-[x] Sign In
-[x] Sign Up
+- [x] Sign In
+- [x] Sign Up
 
-[x] Confirm Email
-[x] Reedem Code
+- [x] Confirm Email
+- [x] Reedem Code
 
-[x] Header
-[x] Footer
-[x] Modals
-[x] Authentication Headers
+- [x] Header
+- [x] Footer
+- [x] Modals
+- [x] Authentication Headers
