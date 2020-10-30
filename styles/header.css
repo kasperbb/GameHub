@@ -109,6 +109,7 @@ nav .dropdown {
 nav .dropdown__section {
 	display: flex;
 	flex-direction: column;
+	padding: 0 2rem;
 }
 
 nav .dropdown__body {
@@ -261,6 +262,10 @@ header .sign-up a:hover {
 
 	header .dropdown .dropdown__body {
 		margin-top: 0.5rem;
+	}
+
+	nav .dropdown__section {
+		padding: 0;
 	}
 
 	header .dropdown .dropdown__divider {
