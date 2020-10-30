@@ -139,6 +139,7 @@ header .search form {
 header .search input[type=text] {
 	padding: 1rem 1rem;
 	border: 2px solid var(--primary);
+	height: 50px;
 }
 
 header .search button {
@@ -146,9 +147,8 @@ header .search button {
 	color: var(--white);
 	background-color: var(--primary);
 	padding: .7rem 1rem;
-	margin-left: -10px;
 	border: 2px solid var(--primary);
-	height: 52px;
+	height: 50px;
 }
 
 /* Shopping Cart & Favorites
