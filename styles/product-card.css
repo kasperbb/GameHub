@@ -8,6 +8,7 @@
 	border: 1px solid #e0e0e0;
 	width: 100%;
 	font-family: 'Open Sans';
+	transition: 0.3s;
 }
 
 .product-card:hover {
@@ -113,6 +114,7 @@
 	border: 1px solid #e0e0e0;
 	margin: 25px 5% 25px 5%;
 	font-family: 'Open Sans';
+	transition: 0.3s;
 }
 
 .product-card--horizontal img {
