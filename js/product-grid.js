@@ -1,5 +1,6 @@
 window.addEventListener('load', () => {
     gridList();
+    priceRange();
 });
 
 const gridList = () => {
@@ -48,3 +49,14 @@ const gridList = () => {
         }
     });
 };
+
+const priceRange = () => {
+    const DOM = {
+        priceRange: document.querySelector('#price-range'),
+        priceOutput: document.querySelector('#price-output'),
+    };
+
+    DOM.priceRange.oninput = () => {
+        DOM.priceOutput.innerHTML = '$' + DOM.priceRange.value;
+    }
+}
