@@ -93,10 +93,18 @@ nav {
 /* Dropdown
 -------------------------------*/
 nav .dropdown-button button i {
+	-webkit-transition: transform 0.5s;
+	-moz-transition: transform 0.5s;
+	-o-transition: transform 0.5s;
+	-ms-transition: transform 0.5s;
 	transition: transform 0.5s;
 }
 nav .dropdown-button.active button i {
 	transform: rotate(180deg);
+	-webkit-transition: transform 0.5s;
+	-moz-transition: transform 0.5s;
+	-o-transition: transform 0.5s;
+	-ms-transition: transform 0.5s;
 	transition: transform 0.5s;
 }
 
@@ -245,14 +253,22 @@ header .sign-up a:hover {
 		margin: 0 auto;
 		left: 0;
 		right: 0;
-		transition: all 0.2s ease 0s;
 		text-align: left;
+		-webkit-transition: all 0.2s ease 0s;
+		-moz-transition: all 0.2s ease 0s;
+		-o-transition: all 0.2s ease 0s;
+		-ms-transition: all 0.2s ease 0s;
+		transition: all 0.2s ease 0s;
 	}
 
 	header .dropdown.hidden {
 		visibility: hidden;
 		opacity: 0;
 		top: 100px;
+		-webkit-transition: all 0.2s ease 0s;
+		-moz-transition: all 0.2s ease 0s;
+		-o-transition: all 0.2s ease 0s;
+		-ms-transition: all 0.2s ease 0s;
 		transition: all 0.2s ease 0s;
 	}
 
@@ -287,7 +303,11 @@ header .sign-up a:hover {
 		border: none;
 		margin: 0;
 		margin-left: -0.7rem;
-		transition: 0.2s;
+		-webkit-transition: all 0.2s ease 0s;
+		-moz-transition: all 0.2s ease 0s;
+		-o-transition: all 0.2s ease 0s;
+		-ms-transition: all 0.2s ease 0s;
+		transition: all 0.2s ease 0s;
 	}
 
 	header .dropdown .dropdown__body > .dropdown__item:hover {
