@@ -1,5 +1,6 @@
 window.addEventListener('load', () => {
     gridList();
+    moreOptions();
     priceRange();
 });
 
@@ -50,6 +51,24 @@ const gridList = () => {
     });
 };
 
+const moreOptions = () => {
+    const DOM = {
+        moreOptionsButton: document.querySelector('.more-options'),
+        categories: document.querySelector('.categories'),
+        priceRange: document.querySelector('.price-range'),
+    };
+
+    DOM.moreOptionsButton.addEventListener('click', event => {
+        if (DOM.categories.classList.contains('active') && DOM.priceRange.classList.contains('active')) {
+            DOM.categories.classList.remove('active');
+            DOM.priceRange.classList.remove('active');
+        } else {
+            DOM.categories.classList.add('active');
+            DOM.priceRange.classList.add('active');
+        }
+    });
+};
+
 const priceRange = () => {
     const DOM = {
         priceRange: document.querySelector('#price-range'),
@@ -59,4 +78,4 @@ const priceRange = () => {
     DOM.priceRange.oninput = () => {
         DOM.priceOutput.innerHTML = '$' + DOM.priceRange.value;
     }
-}
+};

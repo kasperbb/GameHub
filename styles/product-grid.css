@@ -102,6 +102,15 @@ section.content {
 	display: none;
 }
 
+.categories.active,
+.price-range.active {
+	display: unset;
+}
+
+.price-range {
+	margin-bottom: 3rem;
+}
+
 .price-range input {
 	-webkit-appearance: none;
 	width: 100%;
@@ -112,6 +121,7 @@ section.content {
 	-webkit-transition: .2s;
 	transition: opacity .2s;
 	margin-bottom: 1rem;
+	border-radius: 1rem;
 }
 
 .price-range input::-webkit-slider-thumb,
