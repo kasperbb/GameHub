@@ -62,9 +62,11 @@ body {
 	color: var(--dark-gray);
 }
 
-.top-bar__view a {
+.top-bar__view button {
+	background-color: transparent;
+	font-size: 1.5rem;
 	color: unset;
-	margin-right: 10px;
+	border: none;
 }
 
 .top-bar__sort {

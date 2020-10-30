@@ -61,6 +61,10 @@
 	width: 100%;
 }
 
+.modal__button.back {
+	margin-bottom: 1rem;
+}
+
 .modal__button.btn-blue:hover {
 	background-color: transparent;
 	color: var(--secondary);
@@ -100,5 +104,9 @@
 
 	.modal__button.btn-red {
 		margin-left: 0.5rem;
+	}
+
+	.modal__button.back {
+		margin-bottom: 0;
 	}
 }

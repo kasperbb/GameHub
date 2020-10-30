@@ -9,7 +9,6 @@ const gridList = () => {
         productGrid: document.querySelector('#product-grid'),
     };
 
-    // Set active icon
     const setActiveIcon = elem => {
         DOM.viewIcons.forEach(el => {
             el.classList.remove('active');
@@ -18,19 +17,16 @@ const gridList = () => {
         elem.classList.add('active');
     };
 
-    // Change grid to list or list to grid
-    const changeGridList = () => {
-        if (DOM.productGrid.classList.contains('product-grid')) {
-            DOM.productGrid.classList.add('product-list');
-            DOM.productGrid.classList.remove('product-grid');
-        } else {
-            DOM.productGrid.classList.add('product-grid');
-            DOM.productGrid.classList.remove('product-list');
-        }
-    };
+    const changeToGrid = () => {
+        DOM.productGrid.classList.add('product-grid');
+        DOM.productGrid.classList.remove('product-list');
+    }
 
+    const changeToList = () => {
+        DOM.productGrid.classList.add('product-list');
+        DOM.productGrid.classList.remove('product-grid');
+    }
 
-    // Event listener on the view icons in the top bar
     DOM.topBarView.addEventListener('click', event => {
 
         // Check if we click on an icon
@@ -40,8 +36,15 @@ const gridList = () => {
             // Set active nav item
             setActiveIcon(clickedIcon);
 
-            // Set active form
-            changeGridList();
+            // Check if we click on grid
+            if (event.target.classList.contains('fa-th')) {
+                changeToGrid();
+            }
+
+            // Check if we click on list
+            if (event.target.classList.contains('fa-th-list')) {
+                changeToList();
+            }
         }
     });
 };

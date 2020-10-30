@@ -20,24 +20,62 @@ body {
 	background-size: cover;
 }
 
+/* Header
+-------------------------------*/
+header {
+	display: flex;
+	align-items: center;
+	background-color: white;
+	height: 84px;
+}
+
+header .back {
+	position: absolute;
+}
+
+header .back a {
+	display: flex;
+	align-items: center;
+	margin-left: 2rem;
+	font-weight: 600;
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+header .back i {
+	padding-right: 1rem;
+	font-size: 2rem;
+}
+
+header .logo {
+	margin: auto;
+}
+
+header .logo img {
+	width: 100px;
+}
+
+/* Main
+-------------------------------*/
 main {
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	height: 100vh;
 }
 
+/* Form
+-------------------------------*/
 form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
-	max-width: 20rem;
 }
 
 input[type=text],
 input[type=password],
-input[type=email] {
+input[type=email],
+input[type=date],
+select {
 	display: flex;
 	flex-direction: column;
 	padding: 1rem;
@@ -56,19 +94,22 @@ fieldset {
 	width: 100%;
 }
 
+/* Submit
+-------------------------------*/
 .submit {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 }
 
-.submit p {
-	display: inline;
+.submit__message {
+	display: flex;
+	flex-direction: column;
 	color: var(--dark-gray);
 }
 
-.submit .submit__message {
-	margin-bottom: 2.5rem;
+.submit__message p {
+	margin-right: 0.5rem;
 }
 
 .submit button {
@@ -90,6 +131,8 @@ fieldset {
 	color: var(--secondary-color);
 }
 
+/* Card
+-------------------------------*/
 .card {
 	display: flex;
 	flex-direction: column;
@@ -97,22 +140,17 @@ fieldset {
 	background-color: #ffffff;
 	color: var(--secondary-color);
 	border: 1px solid #e0e0e0;
-	border-radius: 4px;
-	margin: 1rem;
+	margin: 5% 1rem;
 	padding: 3rem 5rem;
-	width: 25%;
+	width: 40%;
 }
 
 .card h1 {
 	margin-bottom: 2.5rem;
 }
 
-.email {
-}
-
-.password {
-}
-
+/* Remember me
+-------------------------------*/
 .remember {
 	display: flex;
 	width: 100%;
@@ -120,4 +158,17 @@ fieldset {
 
 .remember input[type=checkbox] {
 	margin-right: .5rem;
+}
+
+/* Media Queries
+-------------------------------*/
+@media only screen and (min-width: 1024px) {
+	.card {
+		width: 30%;
+	}
+
+	.submit__message {
+		flex-direction: row;
+		align-items: center;
+	}
 }

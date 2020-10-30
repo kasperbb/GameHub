@@ -31,19 +31,17 @@
 
     <body>
         <header>
-        
             <div class="logo">
-                <a href="index.html">
+                <a href="index.html" aria-label="Go to frontpage">
                     <img src="https://raw.githubusercontent.com/NoroffFEU/first-year-cross-course-assignment-brief-three/master/GameHub_Logo.png"
-                        width="100" alt="Logo">
+                        alt="Logo for Gamehub">
                 </a>
             </div>
-        
             <nav id="nav" role="navigation">
                 <div class="dropdown-button">
-                    <button class="btn-clear">
+                    <button class="btn-clear" aria-label="Open store dropdown">
                         Store
-                        <i class="fas fa-angle-down"></i>
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
                     </button>
                 </div>
         
@@ -52,61 +50,63 @@
                         <h3 class="dropdown__header">Games</h3>
                         <div class="dropdown__divider"></div>
                         <div class="dropdown__body">
-                            <a href="#0" class="dropdown__item">PC Games</a>
-                            <a href="#0" class="dropdown__item">Xbox Games</a>
-                            <a href="#0" class="dropdown__item">Playstation Games</a>
-                            <a href="#0" class="dropdown__item">Used Games</a>
+                            <a href="#0" class="dropdown__item">Action</a>
+                            <a href="#0" class="dropdown__item">Adventure</a>
+                            <a href="#0" class="dropdown__item">Indie</a>
+                            <a href="#0" class="dropdown__item">RPG</a>
+                            <a href="#0" class="dropdown__item">More...</a>
                         </div>
                     </div>
                     <div class="dropdown__section">
-                        <h3 class="dropdown__header">Games</h3>
+                        <h3 class="dropdown__header">Game Platforms</h3>
                         <div class="dropdown__divider"></div>
                         <div class="dropdown__body">
-                            <a href="#0" class="dropdown__item">PC Games</a>
-                            <a href="#0" class="dropdown__item">Xbox Games</a>
-                            <a href="#0" class="dropdown__item">Playstation Games</a>
-                            <a href="#0" class="dropdown__item">Used Games</a>
+                            <a href="#0" class="dropdown__item">PC</a>
+                            <a href="#0" class="dropdown__item">Xbox</a>
+                            <a href="#0" class="dropdown__item">Playstation</a>
+                            <a href="#0" class="dropdown__item">Nintendo Switch</a>
+                            <a href="#0" class="dropdown__item">More...</a>
                         </div>
                     </div>
                     <div class="dropdown__section">
-                        <h3 class="dropdown__header">Games</h3>
+                        <h3 class="dropdown__header">Gaming Accessories</h3>
                         <div class="dropdown__divider"></div>
                         <div class="dropdown__body">
-                            <a href="#0" class="dropdown__item">PC Games</a>
-                            <a href="#0" class="dropdown__item">Xbox Games</a>
-                            <a href="#0" class="dropdown__item">Playstation Games</a>
-                            <a href="#0" class="dropdown__item">Used Games</a>
+                            <a href="#0" class="dropdown__item">Keyboards</a>
+                            <a href="#0" class="dropdown__item">Mice</a>
+                            <a href="#0" class="dropdown__item">Controllers</a>
+                            <a href="#0" class="dropdown__item">Headset</a>
+                            <a href="#0" class="dropdown__item">More...</a>
                         </div>
                     </div>
                 </div>
         
                 <div class="search">
                     <form>
-                        <input type="text" name="search" id="search">
+                        <input type="text" name="search" id="search" aria-label="Search">
                         <button type="submit"><i class="fas fa-search"></i></button>
                     </form>
                 </div>
         
                 <div class="actions modal-buttons">
-                    <a href="#" class="modal-button--shopping-cart">
+                    <a href="#" class="modal-button--shopping-cart" aria-label="Open shopping-cart">
                         <i class="fas fa-shopping-cart"></i>
                     </a>
-                    <a href="#" class="modal-button--favorite">
+                    <a href="#" class="modal-button--favorite" aria-label="Open favorites">
                         <i class="fas fa-heart"></i>
                     </a>
                 </div>
         
                 <div class="sign-up">
-                    <a href="sign-in.html">
+                    <a href="sign-in.html" aria-label="Go to sign-in">
                         <i class="fas fa-sign-in-alt"></i>
                     </a>
                 </div>
             </nav>
         
-            <div class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
+            <div class="hamburger" id="hamburger" aria-label="Open navigation menu">
+                <i class="fas fa-bars" aria-hidden="true"></i>
             </div>
-        
         </header>
         
         <div id="dropdown-overlay"></div>
@@ -119,12 +119,12 @@
                 </div>
                 <div class="top-bar__actions">
                     <div class="top-bar__view">
-                        <a href="javascript:void(0)">
+                        <button aria-label="Grid view">
                             <i class="fas fa-th view__icon active"></i>
-                        </a>
-                        <a href="javascript:void(0)">
+                        </button>
+                        <button aria-label="List view">
                             <i class="fas fa-th-list view__icon"></i>
-                        </a>
+                        </button>
                     </div>
                     <div class="top-bar__sort">
                         <label for="sort">Sort by</label>
@@ -181,7 +181,9 @@
                 </div>
                 <div class="product-grid" id="product-grid">
                     <div class="product-card">
-                        <img src="images/game-covers/destiny_2.jpg" alt="Destiny 2">
+                        <a href="product.html">
+                            <img src="images/game-covers/destiny_2.jpg" alt="Game cover for Destiny 2">
+                        </a>
                         <div class="product-card__title">
                             <a href="product.html">Destiny 2</a>
                             <p>PS4</p>
@@ -202,7 +204,9 @@
                     </div>
                     
                     <div class="product-card">
-                        <img src="images/game-covers/cyberpunk_2077.jpg" alt="Cyberpunk 2077">
+                        <a href="product.html">
+                            <img src="images/game-covers/cyberpunk_2077.jpg" alt="Game cover for Cyberpunk 2077">
+                        </a>
                         <div class="product-card__title">
                             <a href="product.html">Cyberpunk 2077</a>
                             <p>PS4</p>
@@ -223,7 +227,9 @@
                     </div>
                     
                     <div class="product-card">
-                        <img src="images/game-covers/call_of_duty_infinite_warfare.jpg" alt="Call of Duty: Infinite Warfare">
+                        <a href="product.html">
+                            <img src="images/game-covers/call_of_duty_infinite_warfare.jpg" alt="Game cover for Call of Duty: Infinite Warfare">
+                        </a>
                         <div class="product-card__title">
                             <a href="product.html">Call of Duty: Infinite Warfare</a>
                             <p>PS4</p>
@@ -244,7 +250,9 @@
                     </div>
                     
                     <div class="product-card">
-                        <img src="images/game-covers/assassins_creed_odyssey.png" alt="Assassin's Creed Odyssey">
+                        <a href="product.html">
+                            <img src="images/game-covers/assassins_creed_odyssey.png" alt="Game cover for Assassin's Creed Odyssey">
+                        </a>
                         <div class="product-card__title">
                             <a href="product.html">Assassin's Creed Odyssey</a>
                             <p>PS4</p>
@@ -265,7 +273,9 @@
                     </div>
                     
                     <div class="product-card">
-                        <img src="images/game-covers/fifa_21_standard_edition.jpg" alt="FIFA 21 Standard Edition">
+                        <a href="product.html">
+                            <img src="images/game-covers/fifa_21_standard_edition.jpg" alt="Game cover for FIFA 21 Standard Edition">
+                        </a>
                         <div class="product-card__title">
                             <a href="product.html">FIFA 21 Standard Edition</a>
                             <p>PS4</p>
@@ -286,7 +296,9 @@
                     </div>
 
                     <div class="product-card">
-                        <img src="images/game-covers/destiny_2.jpg" alt="Destiny 2">
+                        <a href="product.html">
+                            <img src="images/game-covers/destiny_2.jpg" alt="Game cover for Destiny 2">
+                        </a>
                         <div class="product-card__title">
                             <a href="product.html">Destiny 2</a>
                             <p>PS4</p>
@@ -307,7 +319,9 @@
                     </div>
                     
                     <div class="product-card">
-                        <img src="images/game-covers/cyberpunk_2077.jpg" alt="Cyberpunk 2077">
+                        <a href="product.html">
+                            <img src="images/game-covers/cyberpunk_2077.jpg" alt="Game cover for Cyberpunk 2077">
+                        </a>
                         <div class="product-card__title">
                             <a href="product.html">Cyberpunk 2077</a>
                             <p>PS4</p>
@@ -328,7 +342,9 @@
                     </div>
                     
                     <div class="product-card">
-                        <img src="images/game-covers/call_of_duty_infinite_warfare.jpg" alt="Call of Duty: Infinite Warfare">
+                        <a href="product.html">
+                            <img src="images/game-covers/call_of_duty_infinite_warfare.jpg" alt="Game cover for Call of Duty: Infinite Warfare">
+                        </a>
                         <div class="product-card__title">
                             <a href="product.html">Call of Duty: Infinite Warfare</a>
                             <p>PS4</p>
@@ -349,7 +365,9 @@
                     </div>
                     
                     <div class="product-card">
-                        <img src="images/game-covers/assassins_creed_odyssey.png" alt="Assassin's Creed Odyssey">
+                        <a href="product.html">
+                            <img src="images/game-covers/assassins_creed_odyssey.png" alt="Game cover for Assassin's Creed Odyssey">
+                        </a>
                         <div class="product-card__title">
                             <a href="product.html">Assassin's Creed Odyssey</a>
                             <p>PS4</p>
@@ -370,7 +388,9 @@
                     </div>
                     
                     <div class="product-card">
-                        <img src="images/game-covers/fifa_21_standard_edition.jpg" alt="FIFA 21 Standard Edition">
+                        <a href="product.html">
+                            <img src="images/game-covers/fifa_21_standard_edition.jpg" alt="Game cover for FIFA 21 Standard Edition">
+                        </a>
                         <div class="product-card__title">
                             <a href="product.html">FIFA 21 Standard Edition</a>
                             <p>PS4</p>
@@ -391,7 +411,9 @@
                     </div>
 
                     <div class="product-card">
-                        <img src="images/game-covers/destiny_2.jpg" alt="Destiny 2">
+                        <a href="product.html">
+                            <img src="images/game-covers/destiny_2.jpg" alt="Game cover for Destiny 2">
+                        </a>
                         <div class="product-card__title">
                             <a href="product.html">Destiny 2</a>
                             <p>PS4</p>
@@ -412,7 +434,9 @@
                     </div>
                     
                     <div class="product-card">
-                        <img src="images/game-covers/cyberpunk_2077.jpg" alt="Cyberpunk 2077">
+                        <a href="product.html">
+                            <img src="images/game-covers/cyberpunk_2077.jpg" alt="Game cover for Cyberpunk 2077">
+                        </a>
                         <div class="product-card__title">
                             <a href="product.html">Cyberpunk 2077</a>
                             <p>PS4</p>
@@ -433,7 +457,9 @@
                     </div>
                     
                     <div class="product-card">
-                        <img src="images/game-covers/call_of_duty_infinite_warfare.jpg" alt="Call of Duty: Infinite Warfare">
+                        <a href="product.html">
+                            <img src="images/game-covers/call_of_duty_infinite_warfare.jpg" alt="Game cover for Call of Duty: Infinite Warfare">
+                        </a>
                         <div class="product-card__title">
                             <a href="product.html">Call of Duty: Infinite Warfare</a>
                             <p>PS4</p>
@@ -454,7 +480,9 @@
                     </div>
                     
                     <div class="product-card">
-                        <img src="images/game-covers/assassins_creed_odyssey.png" alt="Assassin's Creed Odyssey">
+                        <a href="product.html">
+                            <img src="images/game-covers/assassins_creed_odyssey.png" alt="Game cover for Assassin's Creed Odyssey">
+                        </a>
                         <div class="product-card__title">
                             <a href="product.html">Assassin's Creed Odyssey</a>
                             <p>PS4</p>
@@ -475,7 +503,9 @@
                     </div>
                     
                     <div class="product-card">
-                        <img src="images/game-covers/fifa_21_standard_edition.jpg" alt="FIFA 21 Standard Edition">
+                        <a href="product.html">
+                            <img src="images/game-covers/fifa_21_standard_edition.jpg" alt="Game cover for FIFA 21 Standard Edition">
+                        </a>
                         <div class="product-card__title">
                             <a href="product.html">FIFA 21 Standard Edition</a>
                             <p>PS4</p>
@@ -570,7 +600,9 @@
                 </div>
                 <div class="modal__body">
                     <div class="product-card--horizontal">
-                        <img src="images/game-covers/assassins_creed_odyssey.png" alt="Assassin's Creed Odyssey">
+                        <a href="product.html">
+                            <img src="images/game-covers/assassins_creed_odyssey.png" alt="Game cover for Assassin's Creed Odyssey">
+                        </a>
                         <div class="product-card--horizontal__content">
                             <div class="product-card--horizontal__title">
                                 <a href="product.html">Assassin's Creed Odyssey</a>
@@ -588,7 +620,9 @@
                     </div>
         
                     <div class="product-card--horizontal">
-                        <img src="images/game-covers/tom_clancys_rainbow_sig_siege.jpg" alt="Tom Clancy's Rainbow Six Siege">
+                        <a href="product.html">
+                            <img src="images/game-covers/tom_clancys_rainbow_sig_siege.jpg" alt="Game cover for Tom Clancy's Rainbow Six Siege">
+                        </a>
                         <div class="product-card--horizontal__content">
                             <div class="product-card--horizontal__title">
                                 <a href="product.html">Tom Clancy's Rainbow Six Siege</a>
@@ -622,7 +656,9 @@
                 </div>
                 <div class="modal__body">
                     <div class="product-card--horizontal">
-                        <img src="images/game-covers/assassins_creed_odyssey.png" alt="Assassin's Creed Odyssey">
+                        <a href="product.html">
+                            <img src="images/game-covers/assassins_creed_odyssey.png" alt="Game cover for Assassin's Creed Odyssey">
+                        </a>
                         <div class="product-card--horizontal__content">
                             <div class="product-card--horizontal__title">
                                 <a href="product.html">Assassin's Creed Odyssey</a>
@@ -641,7 +677,9 @@
                     </div>
         
                     <div class="product-card--horizontal">
-                        <img src="images/game-covers/call_of_duty_modern_warfare_3.png" alt="Call of Duty: Modern Warfare 3">
+                        <a href="product.html">
+                            <img src="images/game-covers/call_of_duty_modern_warfare_3.png" alt="Game cover for Call of Duty: Modern Warfare 3">
+                        </a>
                         <div class="product-card--horizontal__content">
                             <div class="product-card--horizontal__title">
                                 <a href="product.html">Call of Duty: Modern Warfare 3</a>
