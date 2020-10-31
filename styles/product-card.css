@@ -207,6 +207,10 @@
 		flex-direction: row;
 	}
 
+	.product-card--horizontal img {
+		width: 10rem;
+	}
+
 	.product-card--horizontal__body {
 		flex-direction: row;
 		align-items: flex-end;
