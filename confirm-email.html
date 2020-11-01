@@ -11,7 +11,7 @@
     <title>Comfirm Email - GameHub</title>
 
     <!-- File specific styles -->
-    <link rel="stylesheet" href="styles/sign-in.css">
+    <link rel="stylesheet" href="styles/authentication.css">
 </head>
 
 <body>
@@ -33,20 +33,25 @@
         <div class="card">
             <h1>Comfirm Email</h1>
             <form action="submit.php" method="GET">
-                <fieldset class="code">
-                    <label for="code">Confirmation code</label>
-                    <input type="text" name="code" placeholder="01234567">
-                </fieldset>
-                <fieldset class="submit">
-                    <button>Confirm</button>
-                    <div class="submit__message">
-                        <p>Didn't recieve confirmation email?</p>
-                        <a href="#0">Resend email</a>
-                    </div>
+                <fieldset>
+                    <p class="code">
+                        <label for="code">Confirmation code</label>
+                        <input type="text" name="code" placeholder="01234567">
+                    </p>
+                    <p class="submit">
+                        <button>Confirm</button>
+                        <div class="submit__message">
+                            <p>Didn't recieve confirmation email?</p>
+                            <a href="#0">Resend email</a>
+                        </div>
+                    </p>
                 </fieldset>
             </form>
         </div>
     </main>
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/2540fdf7f0.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

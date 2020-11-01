@@ -124,10 +124,10 @@ section.contact-form form {
 	color: var(--secondary);
 }
 
-input[type=text],
-input[type=email],
-textarea,
-select {
+main input[type=text],
+main input[type=email],
+main textarea,
+main select {
 	display: flex;
 	flex-direction: column;
 	padding: 1rem;
