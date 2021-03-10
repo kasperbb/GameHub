@@ -104,6 +104,10 @@ section.contact-form form {
 	align-items: center;
 }
 
+section.contact-form form p {
+	width: 100%;
+}
+
 .submit button {
 	background-color: var(--secondary);
 	border: 2px solid var(--secondary);
@@ -122,6 +126,16 @@ section.contact-form form {
 	cursor: pointer;
 	background-color: transparent;
 	color: var(--secondary);
+}
+
+.submit button:disabled {
+	cursor: not-allowed;
+	border: 2px solid #ccc;
+	background: #ccc;
+}
+
+.submit button:disabled:hover {
+	color: white;
 }
 
 main input[type=text],
@@ -144,6 +158,13 @@ main select {
 fieldset {
 	border: 0;
 	width: 100%;
+}
+
+.error {
+	display: none;
+	font-size: 0.775rem;
+	margin: 0 0 0 0.5rem;
+	color: var(--warn);
 }
 
 /* Media Queries
